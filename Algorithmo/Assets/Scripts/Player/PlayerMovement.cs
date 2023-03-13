@@ -38,7 +38,8 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void Awake() {
+    private void Awake()
+    {
         playerCollider = GetComponent<Collider>();
     }
 
@@ -47,7 +48,6 @@ public class PlayerMovement : MonoBehaviour
     {
         SetInputs();
         direction = new Vector3(horizontalInput, 0, verticalInput).normalized;
-
         if (IsGrounded && IsDirectionSet())
         {
             SetNewPosition();
@@ -75,11 +75,19 @@ public class PlayerMovement : MonoBehaviour
         movement = movement.normalized;
 
         var newPosition = movement * playerMovementSpeed * Time.deltaTime;
+
         transform.position += newPosition;
+
+        var _pos_x = (float)Math.Round(transform.position.x, 2);
+        var _pos_z = (float)Math.Round(transform.position.z, 2);
+
+        transform.position = new Vector3(_pos_x, transform.position.y, _pos_z);
     }
 
-    private void OnCollisionExit(Collision other) {
-        if (other.gameObject.CompareTag("Ground")){
+    private void OnCollisionExit(Collision other)
+    {
+        if (other.gameObject.CompareTag("Ground"))
+        {
             isGrounded = false;
         }
     }
