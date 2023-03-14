@@ -1,20 +1,25 @@
-using System.Reflection.Emit;
+using System.Collections;
 using UnityEngine;
 
 public class SpawnedPrefabManager : MonoBehaviour
 {
 
-    [SerializeField] private Material baseMaterial;
+    [SerializeField] private Material prefabMaterial;
+    private Renderer prefabRenderer;
 
-    private void Start()
+    private void Awake()
     {
-        GetComponent<Renderer>().material.color = baseMaterial.color;
+        prefabRenderer = GetComponent<Renderer>();
+        prefabRenderer.material.color = prefabMaterial.color;
     }
 
     public void ChangeColor(Color c)
     {
-        Debug.Log("Changing color");
-        GetComponent<Renderer>().material.color = c;
+        prefabRenderer.material.color = c;
     }
 
+    public void Activate()
+    {
+        prefabRenderer.enabled = true;
+    }
 }

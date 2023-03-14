@@ -9,12 +9,16 @@ public class SetupBinaryBoard : MonoBehaviour
     private BinarySearch binarySearch;
 
     [SerializeField] private GameObject prefab = null;
+
     [SerializeField] private Transform instantiateParent = null;
     [SerializeField] private Vector3 prefabSize = new Vector3(1, 1, 1);
     [SerializeField] private Vector2 instantiateOffset = Vector2.right;
     [SerializeField] private Vector2 boardSize = Vector2.zero;
-    [SerializeField] private bool shouldResetBoard = false;
+
+    [SerializeField] private float spawnDelay = 0.1f;
+
     [SerializeField] private bool setupDone = false;
+    [SerializeField] private bool boardActivated = false;
 
     private Vector3 boardPosition = Vector3.zero;
 
@@ -28,28 +32,15 @@ public class SetupBinaryBoard : MonoBehaviour
     private void Start()
     {
         SetUpBoard();
-        StartCoroutine(ActivatePrefabs());
         binarySearch.SetData(prefabsList);
     }
 
     private void Update()
     {
-        if (setupDone && shouldResetBoard)
+        if (setupDone && !boardActivated)
         {
-            Reset();
+            StartCoroutine(ActivatePrefabs());
         }
-    }
-
-    private void Reset()
-    {
-        foreach (var p in prefabsList)
-        {
-            Destroy(p.gameObject);
-        }
-        prefabsList = null;
-        shouldResetBoard = false;
-        setupDone = false;
-        Start();
     }
 
     private void SetUpBoard()
@@ -75,20 +66,17 @@ public class SetupBinaryBoard : MonoBehaviour
         var _index = prefabsList.Count - 1;
         var _boardXPos = prefabsList[_index].transform.position.x;
         transform.position = new Vector3(_boardXPos / -2, 0, transform.position.z);
+        setupDone = true;
     }
 
     private IEnumerator ActivatePrefabs()
     {
-        var _tmpPrefabsList = new List<GameObject>(prefabsList);
-        while (_tmpPrefabsList.Count > 0)
+        var shuffledList = prefabsList.OrderBy(x => Random.value).ToList();
+        foreach (var prefab in shuffledList)
         {
-            var _randomIndex = Random.Range(0, _tmpPrefabsList.Count);
-            var _prefabToActivate = _tmpPrefabsList[_randomIndex];
-
-            _prefabToActivate.SetActive(true);
-            _tmpPrefabsList.Remove(_prefabToActivate);
-            yield return new WaitForSeconds(0.001f);
+            prefab.GetComponent<SpawnedPrefabManager>().Activate();
+            yield return new WaitForSeconds(spawnDelay);
         }
-        setupDone = true;
+        boardActivated = true;
     }
 }
