@@ -7,13 +7,15 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField][Range(0.0f, 0.3f)] private float groundCheckDistance = 3.0f;
 
     private Collider playerCollider = null;
+    private Rigidbody playerRigidbody = null;
 
     private float horizontalInput = 0.0f;
     private float verticalInput = 0.0f;
 
-    Vector3 direction = Vector3.zero;
+    private Vector3 direction = Vector3.zero;
 
-    [SerializeField] private bool isGrounded = false;
+    [SerializeField] public bool isDirectionSet { get; private set; } = false;
+    [SerializeField] public bool isGrounded = false;
     public bool IsGrounded
     {
         get
@@ -29,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
             else
             {
                 Debug.DrawRay(bottom, Vector3.down * groundCheckDistance, Color.blue);
+                isGrounded = false;
             }
             return isGrounded;
         }
@@ -41,20 +44,15 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         playerCollider = GetComponent<Collider>();
+        playerRigidbody = GetComponent<Rigidbody>();
     }
-
 
     private void Update()
     {
         SetInputs();
-        direction = new Vector3(horizontalInput, 0, verticalInput).normalized;
-        if (IsGrounded && IsDirectionSet())
+        if (IsGrounded && isDirectionSet)
         {
-            SetNewPosition();
-        }
-        else if (IsGrounded)
-        {
-            GetComponent<Rigidbody>().Sleep();
+            Move();
         }
     }
 
@@ -62,33 +60,18 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
+        direction = new Vector3(horizontalInput, 0, verticalInput).normalized;
+        isDirectionSet = !direction.Equals(Vector3.zero);
     }
 
-    private bool IsDirectionSet()
+    private void Move()
     {
-        return !direction.Equals(Vector3.zero);
-    }
+        Vector3 movement = (transform.forward * verticalInput) + (transform.right * horizontalInput);
+        playerRigidbody.velocity = movement * playerMovementSpeed;
 
-    private void SetNewPosition()
-    {
-        Vector3 movement = transform.forward * direction.z + transform.right * direction.x;
-        movement = movement.normalized;
-
-        var newPosition = movement * playerMovementSpeed * Time.deltaTime;
-
-        transform.position += newPosition;
-
-        var _pos_x = (float)Math.Round(transform.position.x, 2);
-        var _pos_z = (float)Math.Round(transform.position.z, 2);
-
-        transform.position = new Vector3(_pos_x, transform.position.y, _pos_z);
-    }
-
-    private void OnCollisionExit(Collision other)
-    {
-        if (other.gameObject.CompareTag("Ground"))
+        if (movement.magnitude == 0f)
         {
-            isGrounded = false;
+            playerRigidbody.velocity = Vector3.zero;
         }
     }
 
