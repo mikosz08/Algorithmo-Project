@@ -24,6 +24,8 @@ public class SetupBinaryBoard : MonoBehaviour
 
     private List<GameObject> prefabsList = null;
 
+    private Coroutine activationCoroutine = null;
+
     private void Awake()
     {
         binarySearch = GetComponent<BinarySearch>();
@@ -37,9 +39,9 @@ public class SetupBinaryBoard : MonoBehaviour
 
     private void Update()
     {
-        if (setupDone && !boardActivated)
+        if (setupDone && !boardActivated && activationCoroutine == null)
         {
-            StartCoroutine(ActivatePrefabs());
+            activationCoroutine = StartCoroutine(ActivatePrefabs());
         }
     }
 
