@@ -6,22 +6,29 @@ public class BinarySearch : MonoBehaviour
 {
     private List<BinaryObject> dataset = null;
 
-    public void SetData(List<GameObject> dataset)
+    public void SetData(List<GameObject> objects)
     {
         this.dataset = new List<BinaryObject>();
 
-        foreach (var _object in dataset)
+        foreach (var _object in objects)
         {
             this.dataset.Add(new BinaryObject(_object));
         }
-        
+
         BinaryObject.nextNumber = 0;
     }
 
     public BinaryObject SearchFor(int searchedNumber)
     {
+        var dataSetSize = dataset.Count - 1;
+        if (searchedNumber > dataSetSize)
+        {
+            Debug.Log("Searched Number is out of dataset bounds!");
+            return null;
+        }
+
         var _left = 0;
-        var _right = dataset.Count - 1;
+        var _right = dataSetSize;
 
         while (_left <= _right)
         {
@@ -30,7 +37,7 @@ public class BinarySearch : MonoBehaviour
 
             if (_midObject.Number == searchedNumber)
             {
-                _midObject.Object.GetComponent<SpawnedPrefabManager>().ChangeColor(Color.green);
+                // _midObject.Object.GetComponent<SpawnedPrefabManager>().ChangeColor(Color.green);
                 return _midObject;
             }
             else if (_midObject.Number < searchedNumber)
@@ -43,10 +50,10 @@ public class BinarySearch : MonoBehaviour
             }
 
         }
-        return null;
+        return BinaryObject.Empty;
     }
 
-    private void PrintDataset()
+    public void LogDataset()
     {
         foreach (var d in dataset)
         {
@@ -61,10 +68,18 @@ public class BinarySearch : MonoBehaviour
 
         public static int nextNumber = 0;
 
+        public static BinaryObject Empty { get {return new BinaryObject(new GameObject(), -1); } }
+
         public BinaryObject(GameObject gameObject)
         {
             this.Object = gameObject;
             this.Number = nextNumber++;
+        }
+
+        public BinaryObject(GameObject gameObject, int number)
+        {
+            this.Object = gameObject;
+            this.Number = number;
         }
 
         public override string ToString()

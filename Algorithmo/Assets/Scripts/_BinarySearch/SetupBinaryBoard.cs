@@ -17,14 +17,13 @@ public class SetupBinaryBoard : MonoBehaviour
 
     [SerializeField] private float spawnDelay = 0.1f;
 
-    [SerializeField] private bool setupDone = false;
-    [SerializeField] private bool boardActivated = false;
+    [SerializeField] public bool setupDone { get; private set; } = false;
+    [SerializeField] public bool boardActivated { get; private set; } = false;
 
     private Vector3 boardPosition = Vector3.zero;
-
-    private List<GameObject> prefabsList = null;
-
     private Coroutine activationCoroutine = null;
+
+    public List<GameObject> PrefabsList { get; private set; } = null;
 
     private void Awake()
     {
@@ -34,7 +33,7 @@ public class SetupBinaryBoard : MonoBehaviour
     private void Start()
     {
         SetUpBoard();
-        binarySearch.SetData(prefabsList);
+        binarySearch.SetData(PrefabsList);
     }
 
     private void Update()
@@ -47,7 +46,7 @@ public class SetupBinaryBoard : MonoBehaviour
 
     private void SetUpBoard()
     {
-        prefabsList = new List<GameObject>();
+        PrefabsList = new List<GameObject>();
 
         var position = transform.position;
         var startY = position.y;
@@ -58,22 +57,22 @@ public class SetupBinaryBoard : MonoBehaviour
             for (var y = 0; y < boardSize.y; ++y)
             {
                 var _prefab = Instantiate(prefab, position, transform.rotation, instantiateParent);
-                prefabsList.Add(_prefab);
+                PrefabsList.Add(_prefab);
                 position.y += instantiateOffset.y;
             }
             // Update next prefab's spawn position:
             position.x += instantiateOffset.x;
             position.y = startY;
         }
-        var _index = prefabsList.Count - 1;
-        var _boardXPos = prefabsList[_index].transform.position.x;
+        var _index = PrefabsList.Count - 1;
+        var _boardXPos = PrefabsList[_index].transform.position.x;
         transform.position = new Vector3(_boardXPos / -2, 0, transform.position.z);
         setupDone = true;
     }
 
     private IEnumerator ActivatePrefabs()
     {
-        var shuffledList = prefabsList.OrderBy(x => Random.value).ToList();
+        var shuffledList = PrefabsList.OrderBy(x => Random.value).ToList();
         foreach (var prefab in shuffledList)
         {
             prefab.GetComponent<SpawnedPrefabManager>().Activate();
