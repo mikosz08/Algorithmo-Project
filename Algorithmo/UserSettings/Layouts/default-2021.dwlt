@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 0
+    x: 1920
     y: 43
-    width: 2478
+    width: 2498
     height: 1397
   m_ShowMode: 4
-  m_Title: Inspector
-  m_RootView: {fileID: 9}
+  m_Title: Game
+  m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
@@ -32,24 +32,26 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12008, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
   m_EditorClassIdentifier: 
-  m_Children: []
+  m_Children:
+  - {fileID: 3}
+  - {fileID: 5}
+  - {fileID: 4}
   m_Position:
     serializedVersion: 2
-    x: 1006
+    x: 0
     y: 0
-    width: 501
-    height: 412
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 20}
-  m_Panes:
-  - {fileID: 20}
-  m_Selected: 0
-  m_LastSelected: 0
+    width: 2498
+    height: 1397
+  m_MinSize: {x: 875, y: 300}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_UseTopView: 1
+  m_TopViewHeight: 30
+  m_UseBottomView: 1
+  m_BottomViewHeight: 20
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -58,23 +60,20 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12011, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 4}
-  - {fileID: 2}
+  m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 935
-    width: 1507
-    height: 412
-  m_MinSize: {x: 200, y: 100}
-  m_MaxSize: {x: 16192, y: 8096}
-  vertical: 0
-  controlID: 1608
+    y: 0
+    width: 2498
+    height: 30
+  m_MinSize: {x: 0, y: 0}
+  m_MaxSize: {x: 0, y: 0}
+  m_LastLoadedLayoutName: 
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -83,24 +82,19 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12042, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 1006
-    height: 412
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 15}
-  m_Panes:
-  - {fileID: 15}
-  m_Selected: 0
-  m_LastSelected: 0
+    y: 1377
+    width: 2498
+    height: 20
+  m_MinSize: {x: 0, y: 0}
+  m_MaxSize: {x: 0, y: 0}
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -109,23 +103,25 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
+  m_EditorHideFlags: 1
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
+  - {fileID: 6}
+  - {fileID: 7}
+  - {fileID: 8}
   - {fileID: 14}
-  - {fileID: 3}
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 1507
+    y: 30
+    width: 2498
     height: 1347
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 16192, y: 16192}
-  vertical: 1
-  controlID: 1645
+  m_MinSize: {x: 500, y: 200}
+  m_MaxSize: {x: 40480, y: 16192}
+  vertical: 0
+  controlID: 259
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,13 +139,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 243
+    width: 244
     height: 1347
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 22}
+  m_ActualView: {fileID: 16}
   m_Panes:
-  - {fileID: 22}
+  - {fileID: 16}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &7
@@ -167,15 +163,15 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 243
+    x: 244
     y: 0
-    width: 253
+    width: 255
     height: 1347
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
-  m_ActualView: {fileID: 19}
+  m_ActualView: {fileID: 17}
   m_Panes:
-  - {fileID: 19}
+  - {fileID: 17}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &8
@@ -191,17 +187,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 5}
+  - {fileID: 9}
   m_Position:
     serializedVersion: 2
-    x: 496
+    x: 499
     y: 0
-    width: 1507
+    width: 1423
     height: 1347
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 0
-  controlID: 1644
+  controlID: 131
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -210,125 +206,24 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12008, guid: 0000000000000000e000000000000000, type: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 10}
   - {fileID: 11}
-  - {fileID: 12}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2478
-    height: 1397
-  m_MinSize: {x: 875, y: 300}
-  m_MaxSize: {x: 10000, y: 10000}
-  m_UseTopView: 1
-  m_TopViewHeight: 30
-  m_UseBottomView: 1
-  m_BottomViewHeight: 20
+    width: 1423
+    height: 1347
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 16192, y: 16192}
+  vertical: 1
+  controlID: 132
 --- !u!114 &10
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12011, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 2478
-    height: 30
-  m_MinSize: {x: 0, y: 0}
-  m_MaxSize: {x: 0, y: 0}
-  m_LastLoadedLayoutName: MyWide
---- !u!114 &11
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 6}
-  - {fileID: 7}
-  - {fileID: 8}
-  - {fileID: 13}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 30
-    width: 2478
-    height: 1347
-  m_MinSize: {x: 500, y: 200}
-  m_MaxSize: {x: 40480, y: 16192}
-  vertical: 0
-  controlID: 1643
---- !u!114 &12
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12042, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 1377
-    width: 2478
-    height: 20
-  m_MinSize: {x: 0, y: 0}
-  m_MaxSize: {x: 0, y: 0}
---- !u!114 &13
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 2003
-    y: 0
-    width: 475
-    height: 1347
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 18}
-  m_Panes:
-  - {fileID: 18}
-  - {fileID: 17}
-  - {fileID: 16}
-  m_Selected: 0
-  m_LastSelected: 1
---- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -345,16 +240,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1507
-    height: 935
+    width: 1423
+    height: 766
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 21}
+  m_ActualView: {fileID: 18}
   m_Panes:
-  - {fileID: 21}
+  - {fileID: 18}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &15
+--- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -363,26 +258,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Console
-    m_Image: {fileID: 111653112392082826, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
+  m_Children:
+  - {fileID: 12}
+  - {fileID: 13}
+  m_Position:
     serializedVersion: 2
-    x: 496
-    y: 1008
-    width: 1004
-    height: 391
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
---- !u!114 &16
+    x: 0
+    y: 766
+    width: 1423
+    height: 581
+  m_MinSize: {x: 200, y: 100}
+  m_MaxSize: {x: 16192, y: 8096}
+  vertical: 0
+  controlID: 133
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -391,26 +283,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 12079, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 390, y: 390}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Lighting
-    m_Image: {fileID: 8394858894532624064, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
+  m_Children: []
+  m_Position:
     serializedVersion: 2
-    x: 2003
-    y: 73
-    width: 474
-    height: 1326
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
---- !u!114 &17
+    x: 0
+    y: 0
+    width: 717
+    height: 581
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 19}
+  m_Panes:
+  - {fileID: 19}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -419,4673 +309,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 13401, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: GameView
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Test Runner
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  m_Pos:
+  m_Children: []
+  m_Position:
     serializedVersion: 2
-    x: 2003
-    y: 73
-    width: 474
-    height: 1326
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-  m_Spl:
-    ID: 1312
-    splitterInitialOffset: 889
-    currentActiveSplitter: -1
-    realSizes:
-    - 819
-    - 437
-    relativeSizes:
-    - 0.65207005
-    - 0.34792995
-    minSizes:
-    - 32
-    - 32
-    maxSizes:
-    - 0
-    - 0
-    lastTotalSize: 1256
-    splitSize: 6
-    xOffset: 0
-    m_Version: 1
-    oldRealSizes: 
-    oldMinSizes: 
-    oldMaxSizes: 
-    oldSplitSize: 0
-  m_TestTypeToolbarIndex: 0
-  m_PlayModeTestListGUI:
-    m_Window: {fileID: 17}
-    m_NewResultList:
-    - id: 1005
-      uniqueId: '[Algorithmo][suite]'
-      name: Algorithmo
-      fullName: Algorithmo
-      resultStatus: 1
-      duration: 0.2384099
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 
-      parentUniqueId: 
-    - id: 1008
-      uniqueId: '[BinarySearchTest][D:/Projects/Algorithmo-Project/Algorithmo/Library/ScriptAssemblies/BinarySearchTest.dll][suite]'
-      name: BinarySearchTest.dll
-      fullName: D:/Projects/Algorithmo-Project/Algorithmo/Library/ScriptAssemblies/BinarySearchTest.dll
-      resultStatus: 1
-      duration: 0.0613034
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1005
-      parentUniqueId: '[Algorithmo][suite]'
-    - id: 1006
-      uniqueId: BinarySearchTest.dll/[BinarySearchTest][suite]
-      name: BinarySearchTest
-      fullName: BinarySearchTest
-      resultStatus: 1
-      duration: 0.0461607
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1008
-      parentUniqueId: '[BinarySearchTest][D:/Projects/Algorithmo-Project/Algorithmo/Library/ScriptAssemblies/BinarySearchTest.dll][suite]'
-    - id: 1007
-      uniqueId: BinarySearchTest.dll/BinarySearchTest/[BinarySearchTest][BinarySearchTest.BinarySearchTestResults]
-      name: BinarySearchTestResults
-      fullName: BinarySearchTest.BinarySearchTestResults
-      resultStatus: 1
-      duration: 0.0292178
-      messages: 
-      output: '0 == 0
-
-        46 == 46
-
-        225 == 225
-
-        737 == 737
-
-        133
-        == 133
-
-        2 == 2
-
-        848 == 848
-
-        213 == 213
-
-        645
-        == 645
-
-        945 == 945
-
-        57 == 57
-
-        679 == 679
-
-        191
-        == 191
-
-        563 == 563
-
-        141 == 141
-
-        651 == 651
-
-        244
-        == 244
-
-        228 == 228
-
-        8 == 8
-
-        378 == 378
-
-        570
-        == 570
-
-        508 == 508
-
-        469 == 469
-
-        769 == 769
-
-        832
-        == 832
-
-        342 == 342
-
-        426 == 426
-
-        123 == 123
-
-        76
-        == 76
-
-        678 == 678
-
-        741 == 741
-
-        276 == 276
-
-        471
-        == 471
-
-        907 == 907
-
-        272 == 272
-
-        433 == 433
-
-        923
-        == 923
-
-        679 == 679
-
-        83 == 83
-
-        871 == 871
-
-        323
-        == 323
-
-        107 == 107
-
-        704 == 704
-
-        24 == 24
-
-        39
-        == 39
-
-        123 == 123
-
-        717 == 717
-
-        224 == 224
-
-        923
-        == 923
-
-        227 == 227
-
-        461 == 461
-
-        988 == 988
-
-        357
-        == 357
-
-        31 == 31
-
-        916 == 916
-
-        308 == 308
-
-        187
-        == 187
-
-        11 == 11
-
-        494 == 494
-
-        821 == 821
-
-        35
-        == 35
-
-        891 == 891
-
-        260 == 260
-
-        12 == 12
-
-        50
-        == 50
-
-        797 == 797
-
-        167 == 167
-
-        277 == 277
-
-        2
-        == 2
-
-        680 == 680
-
-        611 == 611
-
-        46 == 46
-
-        587
-        == 587
-
-        932 == 932
-
-        714 == 714
-
-        791 == 791
-
-        412
-        == 412
-
-        701 == 701
-
-        361 == 361
-
-        510 == 510
-
-        342
-        == 342
-
-        663 == 663
-
-        806 == 806
-
-        643 == 643
-
-        438
-        == 438
-
-        661 == 661
-
-        840 == 840
-
-        952 == 952
-
-        857
-        == 857
-
-        308 == 308
-
-        654 == 654
-
-        74 == 74
-
-        879
-        == 879
-
-        638 == 638
-
-        874 == 874
-
-        548 == 548
-
-        78
-        == 78
-
-        678 == 678
-
-        513 == 513
-
-        133 == 133
-
-        242
-        == 242
-
-        946 == 946
-
-        947 == 947
-
-        667 == 667
-
-        899
-        == 899
-
-        313 == 313
-
-        318 == 318
-
-        99 == 99
-
-        269
-        == 269
-
-        472 == 472
-
-        346 == 346
-
-        937 == 937
-
-        119
-        == 119
-
-        638 == 638
-
-        69 == 69
-
-        773 == 773
-
-        74
-        == 74
-
-        260 == 260
-
-        161 == 161
-
-        320 == 320
-
-        978
-        == 978
-
-        197 == 197
-
-        194 == 194
-
-        991 == 991
-
-        233
-        == 233
-
-        533 == 533
-
-        243 == 243
-
-        699 == 699
-
-        217
-        == 217
-
-        215 == 215
-
-        988 == 988
-
-        588 == 588
-
-        698
-        == 698
-
-        611 == 611
-
-        167 == 167
-
-        653 == 653
-
-        206
-        == 206
-
-        128 == 128
-
-        419 == 419
-
-        106 == 106
-
-        35
-        == 35
-
-        710 == 710
-
-        778 == 778
-
-        870 == 870
-
-        272
-        == 272
-
-        189 == 189
-
-        862 == 862
-
-        435 == 435
-
-        405
-        == 405
-
-        619 == 619
-
-        429 == 429
-
-        444 == 444
-
-        567
-        == 567
-
-        161 == 161
-
-        717 == 717
-
-        429 == 429
-
-        175
-        == 175
-
-        403 == 403
-
-        130 == 130
-
-        444 == 444
-
-        400
-        == 400
-
-        555 == 555
-
-        896 == 896
-
-        249 == 249
-
-        133
-        == 133
-
-        386 == 386
-
-        662 == 662
-
-        578 == 578
-
-        110
-        == 110
-
-        112 == 112
-
-        365 == 365
-
-        312 == 312
-
-        269
-        == 269
-
-        801 == 801
-
-        59 == 59
-
-        637 == 637
-
-        24
-        == 24
-
-        232 == 232
-
-        7 == 7
-
-        514 == 514
-
-        42
-        == 42
-
-        820 == 820
-
-        35 == 35
-
-        510 == 510
-
-        515
-        == 515
-
-        0 == 0
-
-        157 == 157
-
-        150 == 150
-
-        923
-        == 923
-
-        363 == 363
-
-        590 == 590
-
-        507 == 507
-
-        280
-        == 280
-
-        756 == 756
-
-        476 == 476
-
-        890 == 890
-
-        509
-        == 509
-
-        96 == 96
-
-        863 == 863
-
-        830 == 830
-
-        772
-        == 772
-
-        646 == 646
-
-        187 == 187
-
-        861 == 861
-
-        921
-        == 921
-
-        269 == 269
-
-        899 == 899
-
-        158 == 158
-
-        971
-        == 971
-
-        754 == 754
-
-        265 == 265
-
-        995 == 995
-
-        574
-        == 574
-
-        112 == 112
-
-        949 == 949
-
-        635 == 635
-
-        73
-        == 73
-
-        464 == 464
-
-        232 == 232
-
-        995 == 995
-
-        521
-        == 521
-
-        11 == 11
-
-        80 == 80
-
-        767 == 767
-
-        268
-        == 268
-
-        847 == 847
-
-        662 == 662
-
-        58 == 58
-
-        607
-        == 607
-
-        524 == 524
-
-        110 == 110
-
-        613 == 613
-
-        294
-        == 294
-
-        333 == 333
-
-        654 == 654
-
-        814 == 814
-
-        972
-        == 972
-
-        709 == 709
-
-        382 == 382
-
-        286 == 286
-
-        540
-        == 540
-
-        12 == 12
-
-        326 == 326
-
-        626 == 626
-
-        856
-        == 856
-
-        974 == 974
-
-        494 == 494
-
-        960 == 960
-
-        299
-        == 299
-
-        598 == 598
-
-        651 == 651
-
-        422 == 422
-
-        548
-        == 548
-
-        641 == 641
-
-        138 == 138
-
-        172 == 172
-
-        204
-        == 204
-
-        390 == 390
-
-        823 == 823
-
-        703 == 703
-
-        862
-        == 862
-
-        218 == 218
-
-        277 == 277
-
-        139 == 139
-
-        329
-        == 329
-
-        219 == 219
-
-        142 == 142
-
-        980 == 980
-
-        213
-        == 213
-
-        396 == 396
-
-        941 == 941
-
-        726 == 726
-
-        453
-        == 453
-
-        634 == 634
-
-        55 == 55
-
-        163 == 163
-
-        78
-        == 78
-
-        349 == 349
-
-        861 == 861
-
-        784 == 784
-
-        935
-        == 935
-
-        528 == 528
-
-        234 == 234
-
-        864 == 864
-
-        835
-        == 835
-
-        812 == 812
-
-        919 == 919
-
-        277 == 277
-
-        905
-        == 905
-
-        76 == 76
-
-        497 == 497
-
-        914 == 914
-
-        804
-        == 804
-
-        204 == 204
-
-        891 == 891
-
-        820 == 820
-
-        258
-        == 258
-
-        55 == 55
-
-        596 == 596
-
-        800 == 800
-
-        13
-        == 13
-
-        953 == 953
-
-        180 == 180
-
-        955 == 955
-
-        965
-        == 965
-
-        182 == 182
-
-        733 == 733
-
-        415 == 415
-
-        215
-        == 215
-
-        643 == 643
-
-        126 == 126
-
-        269 == 269
-
-        788
-        == 788
-
-        45 == 45
-
-        865 == 865
-
-        983 == 983
-
-        272
-        == 272
-
-        683 == 683
-
-        425 == 425
-
-        691 == 691
-
-        505
-        == 505
-
-        470 == 470
-
-        556 == 556
-
-        864 == 864
-
-        206
-        == 206
-
-        375 == 375
-
-        251 == 251
-
-        414 == 414
-
-        39
-        == 39
-
-        922 == 922
-
-        271 == 271
-
-        821 == 821
-
-        698
-        == 698
-
-        6 == 6
-
-        324 == 324
-
-        883 == 883
-
-        16
-        == 16
-
-        439 == 439
-
-        888 == 888
-
-        58 == 58
-
-        978
-        == 978
-
-        583 == 583
-
-        225 == 225
-
-        473 == 473
-
-        3
-        == 3
-
-        858 == 858
-
-        398 == 398
-
-        455 == 455
-
-        632
-        == 632
-
-        671 == 671
-
-        333 == 333
-
-        894 == 894
-
-        224
-        == 224
-
-        20 == 20
-
-        561 == 561
-
-        86 == 86
-
-        376
-        == 376
-
-        811 == 811
-
-        231 == 231
-
-        488 == 488
-
-        965
-        == 965
-
-        894 == 894
-
-        262 == 262
-
-        29 == 29
-
-        105
-        == 105
-
-        756 == 756
-
-        424 == 424
-
-        707 == 707
-
-        459
-        == 459
-
-        789 == 789
-
-        339 == 339
-
-        829 == 829
-
-        654
-        == 654
-
-        245 == 245
-
-        585 == 585
-
-        876 == 876
-
-        713
-        == 713
-
-        829 == 829
-
-        825 == 825
-
-        404 == 404
-
-        177
-        == 177
-
-        454 == 454
-
-        107 == 107
-
-        153 == 153
-
-        482
-        == 482
-
-        27 == 27
-
-        509 == 509
-
-        724 == 724
-
-        904
-        == 904
-
-        41 == 41
-
-        635 == 635
-
-        11 == 11
-
-        615
-        == 615
-
-        341 == 341
-
-        883 == 883
-
-        143 == 143
-
-        294
-        == 294
-
-        182 == 182
-
-        838 == 838
-
-        819 == 819
-
-        233
-        == 233
-
-        899 == 899
-
-        745 == 745
-
-        329 == 329
-
-        56
-        == 56
-
-        21 == 21
-
-        944 == 944
-
-        404 == 404
-
-        370
-        == 370
-
-        164 == 164
-
-        271 == 271
-
-        532 == 532
-
-        689
-        == 689
-
-        214 == 214
-
-        962 == 962
-
-        369 == 369
-
-        709
-        == 709
-
-        659 == 659
-
-        216 == 216
-
-        938 == 938
-
-        643
-        == 643
-
-        281 == 281
-
-        593 == 593
-
-        168 == 168
-
-        123
-        == 123
-
-        470 == 470
-
-        645 == 645
-
-        543 == 543
-
-        975
-        == 975
-
-        610 == 610
-
-        209 == 209
-
-        930 == 930
-
-        72
-        == 72
-
-        111 == 111
-
-        580 == 580
-
-        218 == 218
-
-        169
-        == 169
-
-        210 == 210
-
-        994 == 994
-
-        198 == 198
-
-        257
-        == 257
-
-        300 == 300
-
-        589 == 589
-
-        84 == 84
-
-        846
-        == 846
-
-        788 == 788
-
-        892 == 892
-
-        88 == 88
-
-        645
-        == 645
-
-        836 == 836
-
-        785 == 785
-
-        23 == 23
-
-        3
-        == 3
-
-        323 == 323
-
-        46 == 46
-
-        109 == 109
-
-        849
-        == 849
-
-        917 == 917
-
-        729 == 729
-
-        540 == 540
-
-        963
-        == 963
-
-        139 == 139
-
-        664 == 664
-
-        361 == 361
-
-        147
-        == 147
-
-        258 == 258
-
-        899 == 899
-
-        472 == 472
-
-        275
-        == 275
-
-        189 == 189
-
-        741 == 741
-
-        354 == 354
-
-        998
-        == 998
-
-        597 == 597
-
-        269 == 269
-
-        252 == 252
-
-        282
-        == 282
-
-        77 == 77
-
-        180 == 180
-
-        156 == 156
-
-        689
-        == 689
-
-        808 == 808
-
-        20 == 20
-
-        883 == 883
-
-        294
-        == 294
-
-        758 == 758
-
-        662 == 662
-
-        460 == 460
-
-        57
-        == 57
-
-        351 == 351
-
-        93 == 93
-
-        545 == 545
-
-        319
-        == 319
-
-        976 == 976
-
-        707 == 707
-
-        646 == 646
-
-        261
-        == 261
-
-        203 == 203
-
-        139 == 139
-
-        702 == 702
-
-        136
-        == 136
-
-        831 == 831
-
-        801 == 801
-
-        87 == 87
-
-        141
-        == 141
-
-        738 == 738
-
-        626 == 626
-
-        130 == 130
-
-        101
-        == 101
-
-        793 == 793
-
-        989 == 989
-
-        246 == 246
-
-        270
-        == 270
-
-        765 == 765
-
-        386 == 386
-
-        114 == 114
-
-        727
-        == 727
-
-        281 == 281
-
-        695 == 695
-
-        650 == 650
-
-        749
-        == 749
-
-        759 == 759
-
-        683 == 683
-
-        977 == 977
-
-        154
-        == 154
-
-        811 == 811
-
-        2 == 2
-
-        337 == 337
-
-        486
-        == 486
-
-        147 == 147
-
-        872 == 872
-
-        946 == 946
-
-        969
-        == 969
-
-        257 == 257
-
-        414 == 414
-
-        706 == 706
-
-        225
-        == 225
-
-        579 == 579
-
-        883 == 883
-
-        308 == 308
-
-        963
-        == 963
-
-        268 == 268
-
-        103 == 103
-
-        882 == 882
-
-        723
-        == 723
-
-        410 == 410
-
-        225 == 225
-
-        938 == 938
-
-        258
-        == 258
-
-        842 == 842
-
-        237 == 237
-
-        364 == 364
-
-        796
-        == 796
-
-        642 == 642
-
-        874 == 874
-
-        228 == 228
-
-        24
-        == 24
-
-        567 == 567
-
-        406 == 406
-
-        950 == 950
-
-        163
-        == 163
-
-        162 == 162
-
-        689 == 689
-
-        56 == 56
-
-        513
-        == 513
-
-        460 == 460
-
-        603 == 603
-
-        39 == 39
-
-        956
-        == 956
-
-        258 == 258
-
-        26 == 26
-
-        831 == 831
-
-        560
-        == 560
-
-        814 == 814
-
-        619 == 619
-
-        112 == 112
-
-        46
-        == 46
-
-        776 == 776
-
-        301 == 301
-
-        347 == 347
-
-        648
-        == 648
-
-        963 == 963
-
-        441 == 441
-
-        385 == 385
-
-        243
-        == 243
-
-        528 == 528
-
-        901 == 901
-
-        563 == 563
-
-        209
-        == 209
-
-        533 == 533
-
-        88 == 88
-
-        982 == 982
-
-        738
-        == 738
-
-        910 == 910
-
-        422 == 422
-
-        798 == 798
-
-        88
-        == 88
-
-        669 == 669
-
-        2 == 2
-
-        550 == 550
-
-        996
-        == 996
-
-        640 == 640
-
-        273 == 273
-
-        174 == 174
-
-        719
-        == 719
-
-        394 == 394
-
-        175 == 175
-
-        481 == 481
-
-        297
-        == 297
-
-        894 == 894
-
-        976 == 976
-
-        257 == 257
-
-        100
-        == 100
-
-        167 == 167
-
-        339 == 339
-
-        137 == 137
-
-        550
-        == 550
-
-        394 == 394
-
-        252 == 252
-
-        159 == 159
-
-        512
-        == 512
-
-        63 == 63
-
-        106 == 106
-
-        315 == 315
-
-        229
-        == 229
-
-        598 == 598
-
-        986 == 986
-
-        39 == 39
-
-        408
-        == 408
-
-        264 == 264
-
-        101 == 101
-
-        103 == 103
-
-        68
-        == 68
-
-        226 == 226
-
-        201 == 201
-
-        522 == 522
-
-        781
-        == 781
-
-        374 == 374
-
-        906 == 906
-
-        543 == 543
-
-        833
-        == 833
-
-        735 == 735
-
-        135 == 135
-
-        705 == 705
-
-        727
-        == 727
-
-        768 == 768
-
-        341 == 341
-
-        925 == 925
-
-        666
-        == 666
-
-        256 == 256
-
-        786 == 786
-
-        357 == 357
-
-        194
-        == 194
-
-        384 == 384
-
-        498 == 498
-
-        925 == 925
-
-        239
-        == 239
-
-        15 == 15
-
-        972 == 972
-
-        175 == 175
-
-        132
-        == 132
-
-        327 == 327
-
-        556 == 556
-
-        669 == 669
-
-        906
-        == 906
-
-        212 == 212
-
-        728 == 728
-
-        796 == 796
-
-        89
-        == 89
-
-        124 == 124
-
-        888 == 888
-
-        610 == 610
-
-        499
-        == 499
-
-        325 == 325
-
-        580 == 580
-
-        752 == 752
-
-        314
-        == 314
-
-        465 == 465
-
-        596 == 596
-
-        344 == 344
-
-        230
-        == 230
-
-        670 == 670
-
-        827 == 827
-
-        69 == 69
-
-        586
-        == 586
-
-        669 == 669
-
-        651 == 651
-
-        287 == 287
-
-        989
-        == 989
-
-        984 == 984
-
-        968 == 968
-
-        290 == 290
-
-        142
-        == 142
-
-        165 == 165
-
-        624 == 624
-
-        595 == 595
-
-        198
-        == 198
-
-        209 == 209
-
-        493 == 493
-
-        804 == 804
-
-        390
-        == 390
-
-        492 == 492
-
-        139 == 139
-
-        749 == 749
-
-        834
-        == 834
-
-        996 == 996
-
-        218 == 218
-
-        200 == 200
-
-        865
-        == 865
-
-        613 == 613
-
-        823 == 823
-
-        371 == 371
-
-        39
-        == 39
-
-        516 == 516
-
-        886 == 886
-
-        635 == 635
-
-        81
-        == 81
-
-        845 == 845
-
-        778 == 778
-
-        357 == 357
-
-        52
-        == 52
-
-        420 == 420
-
-        273 == 273
-
-        830 == 830
-
-        665
-        == 665
-
-        922 == 922
-
-        192 == 192
-
-        132 == 132
-
-        545
-        == 545
-
-        542 == 542
-
-        93 == 93
-
-        824 == 824
-
-        393
-        == 393
-
-        573 == 573
-
-        6 == 6
-
-        610 == 610
-
-        756
-        == 756
-
-        929 == 929
-
-        319 == 319
-
-        626 == 626
-
-        899
-        == 899
-
-        682 == 682
-
-        83 == 83
-
-        634 == 634
-
-        920
-        == 920
-
-        486 == 486
-
-        581 == 581
-
-        28 == 28
-
-        409
-        == 409
-
-        706 == 706
-
-        75 == 75
-
-        557 == 557
-
-        64
-        == 64
-
-        411 == 411
-
-        682 == 682
-
-        203 == 203
-
-        861
-        == 861
-
-        26 == 26
-
-        290 == 290
-
-        167 == 167
-
-        772
-        == 772
-
-        358 == 358
-
-        979 == 979
-
-        569 == 569
-
-        86
-        == 86
-
-        509 == 509
-
-        758 == 758
-
-        310 == 310
-
-        549
-        == 549
-
-        998 == 998
-
-        66 == 66
-
-        925 == 925
-
-        366
-        == 366
-
-        15 == 15
-
-        402 == 402
-
-        27 == 27
-
-        679
-        == 679
-
-        839 == 839
-
-        89 == 89
-
-        487 == 487
-
-        741
-        == 741
-
-        72 == 72
-
-        40 == 40
-
-        110 == 110
-
-        278
-        == 278
-
-        309 == 309
-
-        362 == 362
-
-        146 == 146
-
-        131
-        == 131
-
-        508 == 508
-
-        413 == 413
-
-        325 == 325
-
-        754
-        == 754
-
-        440 == 440
-
-        421 == 421
-
-        552 == 552
-
-        307
-        == 307
-
-        673 == 673
-
-        324 == 324
-
-        507 == 507
-
-        137
-        == 137
-
-        880 == 880
-
-        889 == 889
-
-        405 == 405
-
-        102
-        == 102
-
-        11 == 11
-
-        814 == 814
-
-        599 == 599
-
-        45
-        == 45
-
-        679 == 679
-
-        938 == 938
-
-        163 == 163
-
-        273
-        == 273
-
-        836 == 836
-
-        215 == 215
-
-        537 == 537
-
-        292
-        == 292
-
-        707 == 707
-
-        951 == 951
-
-        404 == 404
-
-        132
-        == 132
-
-        111 == 111
-
-        289 == 289
-
-        520 == 520
-
-        17
-        == 17
-
-        510 == 510
-
-        204 == 204
-
-        292 == 292
-
-        610
-        == 610
-
-        927 == 927
-
-        252 == 252
-
-        507 == 507
-
-        28
-        == 28
-
-        711 == 711
-
-        487 == 487
-
-        217 == 217
-
-        238
-        == 238
-
-        119 == 119
-
-        68 == 68
-
-        153 == 153
-
-        15
-        == 15
-
-        998 == 998
-
-        176 == 176
-
-        904 == 904
-
-        563
-        == 563
-
-        109 == 109
-
-        136 == 136
-
-        191 == 191
-
-        220
-        == 220
-
-        111 == 111
-
-        464 == 464
-
-        917 == 917
-
-        11
-        == 11
-
-        732 == 732
-
-        714 == 714
-
-        204 == 204
-
-        77
-        == 77
-
-        427 == 427
-
-        379 == 379
-
-        469 == 469
-
-        248
-        == 248
-
-        115 == 115
-
-        179 == 179
-
-        624 == 624
-
-        541
-        == 541
-
-        903 == 903
-
-        446 == 446
-
-        850 == 850
-
-        601
-        == 601
-
-        375 == 375
-
-        284 == 284
-
-        242 == 242
-
-        740
-        == 740
-
-        934 == 934
-
-        352 == 352
-
-        237 == 237
-
-        159
-        == 159
-
-        219 == 219
-
-        976 == 976
-
-        30 == 30
-
-        257
-        == 257
-
-        448 == 448
-
-        295 == 295
-
-        420 == 420
-
-        997
-        == 997
-
-        543 == 543
-
-        631 == 631
-
-        7 == 7
-
-        362
-        == 362
-
-        752 == 752
-
-        484 == 484
-
-        377 == 377
-
-        256
-        == 256
-
-        24 == 24
-
-        881 == 881
-
-        894 == 894
-
-        4
-        == 4
-
-        759 == 759
-
-        714 == 714
-
-        832 == 832
-
-        376
-        == 376
-
-        336 == 336
-
-        79 == 79
-
-        272 == 272
-
-        325
-        == 325
-
-        144 == 144
-
-        491 == 491
-
-        652 == 652
-
-        27
-        == 27
-
-        796 == 796
-
-        318 == 318
-
-        175 == 175
-
-        4
-        == 4
-
-        966 == 966
-
-        40 == 40
-
-        367 == 367
-
-        296
-        == 296
-
-        212 == 212
-
-        361 == 361
-
-        356 == 356
-
-        744
-        == 744
-
-        255 == 255
-
-        253 == 253
-
-        78 == 78
-
-        241
-        == 241
-
-        829 == 829
-
-        402 == 402
-
-        111 == 111
-
-        217
-        == 217
-
-        233 == 233
-
-        669 == 669
-
-        406 == 406
-
-        592
-        == 592
-
-        46 == 46
-
-        370 == 370
-
-        820 == 820
-
-        508
-        == 508
-
-        264 == 264
-
-        882 == 882
-
-        331 == 331
-
-        146
-        == 146
-
-        865 == 865
-
-        821 == 821
-
-        228 == 228
-
-        498
-        == 498
-
-        4 == 4
-
-        556 == 556
-
-        518 == 518
-
-        202
-        == 202
-
-        491 == 491
-
-        456 == 456
-
-        799 == 799
-
-        464
-        == 464
-
-        202 == 202
-
-        20 == 20
-
-        469 == 469
-
-        771
-        == 771
-
-        380 == 380
-
-        965 == 965
-
-        111 == 111
-
-        480
-        == 480
-
-        776 == 776
-
-        901 == 901
-
-        329 == 329
-
-        507
-        == 507
-
-        697 == 697
-
-        249 == 249
-
-        840 == 840
-
-        64
-        == 64
-
-        88 == 88
-
-        21 == 21
-
-        32 == 32
-
-        542
-        == 542
-
-        433 == 433
-
-        685 == 685
-
-        943 == 943
-
-        845
-        == 845
-
-        445 == 445
-
-        553 == 553
-
-        441 == 441
-
-        620
-        == 620
-
-        505 == 505
-
-        960 == 960
-
-        190 == 190
-
-        679
-        == 679
-
-        762 == 762
-
-        448 == 448
-
-        882 == 882
-
-        569
-        == 569
-
-        181 == 181
-
-        585 == 585
-
-        165 == 165
-
-        831
-        == 831
-
-        446 == 446
-
-        716 == 716
-
-        319 == 319
-
-        757
-        == 757
-
-        460 == 460
-
-        478 == 478
-
-        202 == 202
-
-        999
-        == 999
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1006
-      parentUniqueId: BinarySearchTest.dll/[BinarySearchTest][suite]
-    m_ResultText: 'BinarySearchTestResults (0.029s)
-
-      ---
-
-      0 == 0
-
-      46
-      == 46
-
-      225 == 225
-
-      737 == 737
-
-      133 == 133
-
-      2 == 2
-
-      848
-      == 848
-
-      213 == 213
-
-      645 == 645
-
-      945 == 945
-
-      57 == 57
-
-      679
-      == 679
-
-      191 == 191
-
-      563 == 563
-
-      141 == 141
-
-      651 ==
-      651
-
-      244 == 244
-
-      228 == 228
-
-      8 == 8
-
-      378 == 378
-
-      570
-      == 570
-
-      508 == 508
-
-      469 == 469
-
-      769 == 769
-
-      832 ==
-      832
-
-      342 == 342
-
-      426 == 426
-
-      123 == 123
-
-      76 == 76
-
-      678
-      == 678
-
-      741 == 741
-
-      276 == 276
-
-      471 == 471
-
-      907 ==
-      907
-
-      272 == 272
-
-      433 == 433
-
-      923 == 923
-
-      679 == 679
-
-      83
-      == 83
-
-      871 == 871
-
-      323 == 323
-
-      107 == 107
-
-      704 == 704
-
-      24
-      == 24
-
-      39 == 39
-
-      123 == 123
-
-      717 == 717
-
-      224 == 224
-
-      923
-      == 923
-
-      227 == 227
-
-      461 == 461
-
-      988 == 988
-
-      357 ==
-      357
-
-      31 == 31
-
-      916 == 916
-
-      308 == 308
-
-      187 == 187
-
-      11
-      == 11
-
-      494 == 494
-
-      821 == 821
-
-      35 == 35
-
-      891 == 891
-
-      260
-      == 260
-
-      12 == 12
-
-      50 == 50
-
-      797 == 797
-
-      167 == 167
-
-      277
-      == 277
-
-      2 == 2
-
-      680 == 680
-
-      611 == 611
-
-      46 == 46
-
-      587
-      == 587
-
-      932 == 932
-
-      714 == 714
-
-      791 == 791
-
-      412 ==
-      412
-
-      701 == 701
-
-      361 == 361
-
-      510 == 510
-
-      342 == 342
-
-      663
-      == 663
-
-      806 == 806
-
-      643 == 643
-
-      438 == 438
-
-      661 ==
-      661
-
-      840 == 840
-
-      952 == 952
-
-      857 == 857
-
-      308 == 308
-
-      654
-      == 654
-
-      74 == 74
-
-      879 == 879
-
-      638 == 638
-
-      874 == 874
-
-      548
-      == 548
-
-      78 == 78
-
-      678 == 678
-
-      513 == 513
-
-      133 == 133
-
-      242
-      == 242
-
-      946 == 946
-
-      947 == 947
-
-      667 == 667
-
-      899 ==
-      899
-
-      313 == 313
-
-      318 == 318
-
-      99 == 99
-
-      269 == 269
-
-      472
-      == 472
-
-      346 == 346
-
-      937 == 937
-
-      119 == 119
-
-      638 ==
-      638
-
-      69 == 69
-
-      773 == 773
-
-      74 == 74
-
-      260 == 260
-
-      161
-      == 161
-
-      320 == 320
-
-      978 == 978
-
-      197 == 197
-
-      194 ==
-      194
-
-      991 == 991
-
-      233 == 233
-
-      533 == 533
-
-      243 == 243
-
-      699
-      == 699
-
-      217 == 217
-
-      215 == 215
-
-      988 == 988
-
-      588 ==
-      588
-
-      698 == 698
-
-      611 == 611
-
-      167 == 167
-
-      653 == 653
-
-      206
-      == 206
-
-      128 == 128
-
-      419 == 419
-
-      106 == 106
-
-      35 == 35
-
-      710
-      == 710
-
-      778 == 778
-
-      870 == 870
-
-      272 == 272
-
-      189 ==
-      189
-
-      862 == 862
-
-      435 == 435
-
-      405 == 405
-
-      619 == 619
-
-      429
-      == 429
-
-      444 == 444
-
-      567 == 567
-
-      161 == 161
-
-      717 ==
-      717
-
-      429 == 429
-
-      175 == 175
-
-      403 == 403
-
-      130 == 130
-
-      444
-      == 444
-
-      400 == 400
-
-      555 == 555
-
-      896 == 896
-
-      249 ==
-      249
-
-      133 == 133
-
-      386 == 386
-
-      662 == 662
-
-      578 == 578
-
-      110
-      == 110
-
-      112 == 112
-
-      365 == 365
-
-      312 == 312
-
-      269 ==
-      269
-
-      801 == 801
-
-      59 == 59
-
-      637 == 637
-
-      24 == 24
-
-      232
-      == 232
-
-      7 == 7
-
-      514 == 514
-
-      42 == 42
-
-      820 == 820
-
-      35
-      == 35
-
-      510 == 510
-
-      515 == 515
-
-      0 == 0
-
-      157 == 157
-
-      150
-      == 150
-
-      923 == 923
-
-      363 == 363
-
-      590 == 590
-
-      507 ==
-      507
-
-      280 == 280
-
-      756 == 756
-
-      476 == 476
-
-      890 == 890
-
-      509
-      == 509
-
-      96 == 96
-
-      863 == 863
-
-      830 == 830
-
-      772 == 772
-
-      646
-      == 646
-
-      187 == 187
-
-      861 == 861
-
-      921 == 921
-
-      269 ==
-      269
-
-      899 == 899
-
-      158 == 158
-
-      971 == 971
-
-      754 == 754
-
-      265
-      == 265
-
-      995 == 995
-
-      574 == 574
-
-      112 == 112
-
-      949 ==
-      949
-
-      635 == 635
-
-      73 == 73
-
-      464 == 464
-
-      232 == 232
-
-      995
-      == 995
-
-      521 == 521
-
-      11 == 11
-
-      80 == 80
-
-      767 == 767
-
-      268
-      == 268
-
-      847 == 847
-
-      662 == 662
-
-      58 == 58
-
-      607 == 607
-
-      524
-      == 524
-
-      110 == 110
-
-      613 == 613
-
-      294 == 294
-
-      333 ==
-      333
-
-      654 == 654
-
-      814 == 814
-
-      972 == 972
-
-      709 == 709
-
-      382
-      == 382
-
-      286 == 286
-
-      540 == 540
-
-      12 == 12
-
-      326 == 326
-
-      626
-      == 626
-
-      856 == 856
-
-      974 == 974
-
-      494 == 494
-
-      960 ==
-      960
-
-      299 == 299
-
-      598 == 598
-
-      651 == 651
-
-      422 == 422
-
-      548
-      == 548
-
-      641 == 641
-
-      138 == 138
-
-      172 == 172
-
-      204 ==
-      204
-
-      390 == 390
-
-      823 == 823
-
-      703 == 703
-
-      862 == 862
-
-      218
-      == 218
-
-      277 == 277
-
-      139 == 139
-
-      329 == 329
-
-      219 ==
-      219
-
-      142 == 142
-
-      980 == 980
-
-      213 == 213
-
-      396 == 396
-
-      941
-      == 941
-
-      726 == 726
-
-      453 == 453
-
-      634 == 634
-
-      55 == 55
-
-      163
-      == 163
-
-      78 == 78
-
-      349 == 349
-
-      861 == 861
-
-      784 == 784
-
-      935
-      == 935
-
-      528 == 528
-
-      234 == 234
-
-      864 == 864
-
-      835 ==
-      835
-
-      812 == 812
-
-      919 == 919
-
-      277 == 277
-
-      905 == 905
-
-      76
-      == 76
-
-      497 == 497
-
-      914 == 914
-
-      804 == 804
-
-      204 == 204
-
-      891
-      == 891
-
-      820 == 820
-
-      258 == 258
-
-      55 == 55
-
-      596 == 596
-
-      800
-      == 800
-
-      13 == 13
-
-      953 == 953
-
-      180 == 180
-
-      955 == 955
-
-      965
-      == 965
-
-      182 == 182
-
-      733 == 733
-
-      415 == 415
-
-      215 ==
-      215
-
-      643 == 643
-
-      126 == 126
-
-      269 == 269
-
-      788 == 788
-
-      45
-      == 45
-
-      865 == 865
-
-      983 == 983
-
-      272 == 272
-
-      683 == 683
-
-      425
-      == 425
-
-      691 == 691
-
-      505 == 505
-
-      470 == 470
-
-      556 ==
-      556
-
-      864 == 864
-
-      206 == 206
-
-      375 == 375
-
-      251 == 251
-
-      414
-      == 414
-
-      39 == 39
-
-      922 == 922
-
-      271 == 271
-
-      821 == 821
-
-      698
-      == 698
-
-      6 == 6
-
-      324 == 324
-
-      883 == 883
-
-      16 == 16
-
-      439
-      == 439
-
-      888 == 888
-
-      58 == 58
-
-      978 == 978
-
-      583 == 583
-
-      225
-      == 225
-
-      473 == 473
-
-      3 == 3
-
-      858 == 858
-
-      398 == 398
-
-      455
-      == 455
-
-      632 == 632
-
-      671 == 671
-
-      333 == 333
-
-      894 ==
-      894
-
-      224 == 224
-
-      20 == 20
-
-      561 == 561
-
-      86 == 86
-
-      376
-      == 376
-
-      811 == 811
-
-      231 == 231
-
-      488 == 488
-
-      965 ==
-      965
-
-      894 == 894
-
-      262 == 262
-
-      29 == 29
-
-      105 == 105
-
-      756
-      == 756
-
-      424 == 424
-
-      707 == 707
-
-      459 == 459
-
-      789 ==
-      789
-
-      339 == 339
-
-      829 == 829
-
-      654 == 654
-
-      245 == 245
-
-      585
-      == 585
-
-      876 == 876
-
-      713 == 713
-
-      829 == 829
-
-      825 ==
-      825
-
-      404 == 404
-
-      177 == 177
-
-      454 == 454
-
-      107 == 107
-
-      153
-      == 153
-
-      482 == 482
-
-      27 == 27
-
-      509 == 509
-
-      724 == 724
-
-      904
-      == 904
-
-      41 == 41
-
-      635 == 635
-
-      11 == 11
-
-      615 == 615
-
-      341
-      == 341
-
-      883 == 883
-
-      143 == 143
-
-      294 == 294
-
-      182 ==
-      182
-
-      838 == 838
-
-      819 == 819
-
-      233 == 233
-
-      899 == 899
-
-      745
-      == 745
-
-      329 == 329
-
-      56 == 56
-
-      21 == 21
-
-      944 == 944
-
-      404
-      == 404
-
-      370 == 370
-
-      164 == 164
-
-      271 == 271
-
-      532 ==
-      532
-
-      689 == 689
-
-      214 == 214
-
-      962 == 962
-
-      369 == 369
-
-      709
-      == 709
-
-      659 == 659
-
-      216 == 216
-
-      938 == 938
-
-      643 ==
-      643
-
-      281 == 281
-
-      593 == 593
-
-      168 == 168
-
-      123 == 123
-
-      470
-      == 470
-
-      645 == 645
-
-      543 == 543
-
-      975 == 975
-
-      610 ==
-      610
-
-      209 == 209
-
-      930 == 930
-
-      72 == 72
-
-      111 == 111
-
-      580
-      == 580
-
-      218 == 218
-
-      169 == 169
-
-      210 == 210
-
-      994 ==
-      994
-
-      198 == 198
-
-      257 == 257
-
-      300 == 300
-
-      589 == 589
-
-      84
-      == 84
-
-      846 == 846
-
-      788 == 788
-
-      892 == 892
-
-      88 == 88
-
-      645
-      == 645
-
-      836 == 836
-
-      785 == 785
-
-      23 == 23
-
-      3 == 3
-
-      323
-      == 323
-
-      46 == 46
-
-      109 == 109
-
-      849 == 849
-
-      917 == 917
-
-      729
-      == 729
-
-      540 == 540
-
-      963 == 963
-
-      139 == 139
-
-      664 ==
-      664
-
-      361 == 361
-
-      147 == 147
-
-      258 == 258
-
-      899 == 899
-
-      472
-      == 472
-
-      275 == 275
-
-      189 == 189
-
-      741 == 741
-
-      354 ==
-      354
-
-      998 == 998
-
-      597 == 597
-
-      269 == 269
-
-      252 == 252
-
-      282
-      == 282
-
-      77 == 77
-
-      180 == 180
-
-      156 == 156
-
-      689 == 689
-
-      808
-      == 808
-
-      20 == 20
-
-      883 == 883
-
-      294 == 294
-
-      758 == 758
-
-      662
-      == 662
-
-      460 == 460
-
-      57 == 57
-
-      351 == 351
-
-      93 == 93
-
-      545
-      == 545
-
-      319 == 319
-
-      976 == 976
-
-      707 == 707
-
-      646 ==
-      646
-
-      261 == 261
-
-      203 == 203
-
-      139 == 139
-
-      702 == 702
-
-      136
-      == 136
-
-      831 == 831
-
-      801 == 801
-
-      87 == 87
-
-      141 == 141
-
-      738
-      == 738
-
-      626 == 626
-
-      130 == 130
-
-      101 == 101
-
-      793 ==
-      793
-
-      989 == 989
-
-      246 == 246
-
-      270 == 270
-
-      765 == 765
-
-      386
-      == 386
-
-      114 == 114
-
-      727 == 727
-
-      281 == 281
-
-      695 ==
-      695
-
-      650 == 650
-
-      749 == 749
-
-      759 == 759
-
-      683 == 683
-
-      977
-      == 977
-
-      154 == 154
-
-      811 == 811
-
-      2 == 2
-
-      337 == 337
-
-      486
-      == 486
-
-      147 == 147
-
-      872 == 872
-
-      946 == 946
-
-      969 ==
-      969
-
-      257 == 257
-
-      414 == 414
-
-      706 == 706
-
-      225 == 225
-
-      579
-      == 579
-
-      883 == 883
-
-      308 == 308
-
-      963 == 963
-
-      268 ==
-      268
-
-      103 == 103
-
-      882 == 882
-
-      723 == 723
-
-      410 == 410
-
-      225
-      == 225
-
-      938 == 938
-
-      258 == 258
-
-      842 == 842
-
-      237 ==
-      237
-
-      364 == 364
-
-      796 == 796
-
-      642 == 642
-
-      874 == 874
-
-      228
-      == 228
-
-      24 == 24
-
-      567 == 567
-
-      406 == 406
-
-      950 == 950
-
-      163
-      == 163
-
-      162 == 162
-
-      689 == 689
-
-      56 == 56
-
-      513 == 513
-
-      460
-      == 460
-
-      603 == 603
-
-      39 == 39
-
-      956 == 956
-
-      258 == 258
-
-      26
-      == 26
-
-      831 == 831
-
-      560 == 560
-
-      814 == 814
-
-      619 == 619
-
-      112
-      == 112
-
-      46 == 46
-
-      776 == 776
-
-      301 == 301
-
-      347 == 347
-
-      648
-      == 648
-
-      963 == 963
-
-      441 == 441
-
-      385 == 385
-
-      243 ==
-      243
-
-      528 == 528
-
-      901 == 901
-
-      563 == 563
-
-      209 == 209
-
-      533
-      == 533
-
-      88 == 88
-
-      982 == 982
-
-      738 == 738
-
-      910 == 910
-
-      422
-      == 422
-
-      798 == 798
-
-      88 == 88
-
-      669 == 669
-
-      2 == 2
-
-      550
-      == 550
-
-      996 == 996
-
-      640 == 640
-
-      273 == 273
-
-      174 ==
-      174
-
-      719 == 719
-
-      394 == 394
-
-      175 == 175
-
-      481 == 481
-
-      297
-      == 297
-
-      894 == 894
-
-      976 == 976
-
-      257 == 257
-
-      100 ==
-      100
-
-      167 == 167
-
-      339 == 339
-
-      137 == 137
-
-      550 == 550
-
-      394
-      == 394
-
-      252 == 252
-
-      159 == 159
-
-      512 == 512
-
-      63 == 63
-
-      106
-      == 106
-
-      315 == 315
-
-      229 == 229
-
-      598 == 598
-
-      986 ==
-      986
-
-      39 == 39
-
-      408 == 408
-
-      264 == 264
-
-      101 == 101
-
-      103
-      == 103
-
-      68 == 68
-
-      226 == 226
-
-      201 == 201
-
-      522 == 522
-
-      781
-      == 781
-
-      374 == 374
-
-      906 == 906
-
-      543 == 543
-
-      833 ==
-      833
-
-      735 == 735
-
-      135 == 135
-
-      705 == 705
-
-      727 == 727
-
-      768
-      == 768
-
-      341 == 341
-
-      925 == 925
-
-      666 == 666
-
-      256 ==
-      256
-
-      786 == 786
-
-      357 == 357
-
-      194 == 194
-
-      384 == 384
-
-      498
-      == 498
-
-      925 == 925
-
-      239 == 239
-
-      15 == 15
-
-      972 == 972
-
-      175
-      == 175
-
-      132 == 132
-
-      327 == 327
-
-      556 == 556
-
-      669 ==
-      669
-
-      906 == 906
-
-      212 == 212
-
-      728 == 728
-
-      796 == 796
-
-      89
-      == 89
-
-      124 == 124
-
-      888 == 888
-
-      610 == 610
-
-      499 == 499
-
-      325
-      == 325
-
-      580 == 580
-
-      752 == 752
-
-      314 == 314
-
-      465 ==
-      465
-
-      596 == 596
-
-      344 == 344
-
-      230 == 230
-
-      670 == 670
-
-      827
-      == 827
-
-      69 == 69
-
-      586 == 586
-
-      669 == 669
-
-      651 == 651
-
-      287
-      == 287
-
-      989 == 989
-
-      984 == 984
-
-      968 == 968
-
-      290 ==
-      290
-
-      142 == 142
-
-      165 == 165
-
-      624 == 624
-
-      595 == 595
-
-      198
-      == 198
-
-      209 == 209
-
-      493 == 493
-
-      804 == 804
-
-      390 ==
-      390
-
-      492 == 492
-
-      139 == 139
-
-      749 == 749
-
-      834 == 834
-
-      996
-      == 996
-
-      218 == 218
-
-      200 == 200
-
-      865 == 865
-
-      613 ==
-      613
-
-      823 == 823
-
-      371 == 371
-
-      39 == 39
-
-      516 == 516
-
-      886
-      == 886
-
-      635 == 635
-
-      81 == 81
-
-      845 == 845
-
-      778 == 778
-
-      357
-      == 357
-
-      52 == 52
-
-      420 == 420
-
-      273 == 273
-
-      830 == 830
-
-      665
-      == 665
-
-      922 == 922
-
-      192 == 192
-
-      132 == 132
-
-      545 ==
-      545
-
-      542 == 542
-
-      93 == 93
-
-      824 == 824
-
-      393 == 393
-
-      573
-      == 573
-
-      6 == 6
-
-      610 == 610
-
-      756 == 756
-
-      929 == 929
-
-      319
-      == 319
-
-      626 == 626
-
-      899 == 899
-
-      682 == 682
-
-      83 == 83
-
-      634
-      == 634
-
-      920 == 920
-
-      486 == 486
-
-      581 == 581
-
-      28 == 28
-
-      409
-      == 409
-
-      706 == 706
-
-      75 == 75
-
-      557 == 557
-
-      64 == 64
-
-      411
-      == 411
-
-      682 == 682
-
-      203 == 203
-
-      861 == 861
-
-      26 == 26
-
-      290
-      == 290
-
-      167 == 167
-
-      772 == 772
-
-      358 == 358
-
-      979 ==
-      979
-
-      569 == 569
-
-      86 == 86
-
-      509 == 509
-
-      758 == 758
-
-      310
-      == 310
-
-      549 == 549
-
-      998 == 998
-
-      66 == 66
-
-      925 == 925
-
-      366
-      == 366
-
-      15 == 15
-
-      402 == 402
-
-      27 == 27
-
-      679 == 679
-
-      839
-      == 839
-
-      89 == 89
-
-      487 == 487
-
-      741 == 741
-
-      72 == 72
-
-      40
-      == 40
-
-      110 == 110
-
-      278 == 278
-
-      309 == 309
-
-      362 == 362
-
-      146
-      == 146
-
-      131 == 131
-
-      508 == 508
-
-      413 == 413
-
-      325 ==
-      325
-
-      754 == 754
-
-      440 == 440
-
-      421 == 421
-
-      552 == 552
-
-      307
-      == 307
-
-      673 == 673
-
-      324 == 324
-
-      507 == 507
-
-      137 ==
-      137
-
-      880 == 880
-
-      889 == 889
-
-      405 == 405
-
-      102 == 102
-
-      11
-      == 11
-
-      814 == 814
-
-      599 == 599
-
-      45 == 45
-
-      679 == 679
-
-      938
-      == 938
-
-      163 == 163
-
-      273 == 273
-
-      836 == 836
-
-      215 ==
-      215
-
-      537 == 537
-
-      292 == 292
-
-      707 == 707
-
-      951 == 951
-
-      404
-      == 404
-
-      132 == 132
-
-      111 == 111
-
-      289 == 289
-
-      520 ==
-      520
-
-      17 == 17
-
-      510 == 510
-
-      204 == 204
-
-      292 == 292
-
-      610
-      == 610
-
-      927 == 927
-
-      252 == 252
-
-      507 == 507
-
-      28 == 28
-
-      711
-      == 711
-
-      487 == 487
-
-      217 == 217
-
-      238 == 238
-
-      119 ==
-      119
-
-      68 == 68
-
-      153 == 153
-
-      15 == 15
-
-      998 == 998
-
-      176
-      == 176
-
-      904 == 904
-
-      563 == 563
-
-      109 == 109
-
-      136 ==
-      136
-
-      191 == 191
-
-      220 == 220
-
-      111 == 111
-
-      464 == 464
-
-      917
-      == 917
-
-      11 == 11
-
-      732 == 732
-
-      714 == 714
-
-      204 == 204
-
-      77
-      == 77
-
-      427 == 427
-
-      379 == 379
-
-      469 == 469
-
-      248 == 248
-
-      115
-      == 115
-
-      179 == 179
-
-      624 == 624
-
-      541 == 541
-
-      903 ==
-      903
-
-      446 == 446
-
-      850 == 850
-
-      601 == 601
-
-      375 == 375
-
-      284
-      == 284
-
-      242 == 242
-
-      740 == 740
-
-      934 == 934
-
-      352 ==
-      352
-
-      237 == 237
-
-      159 == 159
-
-      219 == 219
-
-      976 == 976
-
-      30
-      == 30
-
-      257 == 257
-
-      448 == 448
-
-      295 == 295
-
-      420 == 420
-
-      997
-      == 997
-
-      543 == 543
-
-      631 == 631
-
-      7 == 7
-
-      362 == 362
-
-      752
-      == 752
-
-      484 == 484
-
-      377 == 377
-
-      256 == 256
-
-      24 == 24
-
-      881
-      == 881
-
-      894 == 894
-
-      4 == 4
-
-      759 == 759
-
-      714 == 714
-
-      832
-      == 832
-
-      376 == 376
-
-      336 == 336
-
-      79 == 79
-
-      272 == 272
-
-      325
-      == 325
-
-      144 == 144
-
-      491 == 491
-
-      652 == 652
-
-      27 == 27
-
-      796
-      == 796
-
-      318 == 318
-
-      175 == 175
-
-      4 == 4
-
-      966 == 966
-
-      40
-      == 40
-
-      367 == 367
-
-      296 == 296
-
-      212 == 212
-
-      361 == 361
-
-      356
-      == 356
-
-      744 == 744
-
-      255 == 255
-
-      253 == 253
-
-      78 == 78
-
-      241
-      == 241
-
-      829 == 829
-
-      402 == 402
-
-      111 == 111
-
-      217 ==
-      217
-
-      233 == 233
-
-      669 == 669
-
-      406 == 406
-
-      592 == 592
-
-      46
-      == 46
-
-      370 == 370
-
-      820 == 820
-
-      508 == 508
-
-      264 == 264
-
-      882
-      == 882
-
-      331 == 331
-
-      146 == 146
-
-      865 == 865
-
-      821 ==
-      821
-
-      228 == 228
-
-      498 == 498
-
-      4 == 4
-
-      556 == 556
-
-      518
-      == 518
-
-      202 == 202
-
-      491 == 491
-
-      456 == 456
-
-      799 ==
-      799
-
-      464 == 464
-
-      202 == 202
-
-      20 == 20
-
-      469 == 469
-
-      771
-      == 771
-
-      380 == 380
-
-      965 == 965
-
-      111 == 111
-
-      480 ==
-      480
-
-      776 == 776
-
-      901 == 901
-
-      329 == 329
-
-      507 == 507
-
-      697
-      == 697
-
-      249 == 249
-
-      840 == 840
-
-      64 == 64
-
-      88 == 88
-
-      21
-      == 21
-
-      32 == 32
-
-      542 == 542
-
-      433 == 433
-
-      685 == 685
-
-      943
-      == 943
-
-      845 == 845
-
-      445 == 445
-
-      553 == 553
-
-      441 ==
-      441
-
-      620 == 620
-
-      505 == 505
-
-      960 == 960
-
-      190 == 190
-
-      679
-      == 679
-
-      762 == 762
-
-      448 == 448
-
-      882 == 882
-
-      569 ==
-      569
-
-      181 == 181
-
-      585 == 585
-
-      165 == 165
-
-      831 == 831
-
-      446
-      == 446
-
-      716 == 716
-
-      319 == 319
-
-      757 == 757
-
-      460 ==
-      460
-
-      478 == 478
-
-      202 == 202
-
-      999 == 999'
-    m_ResultStacktrace: 
-    m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 69b493d7
-      m_LastClickedID: -678185879
-      m_ExpandedIDs: 3f155cc6a6ff26f432aa7f46ffffff7f
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: 0
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
-      m_SearchString: 
-    m_TestRunnerUIFilter:
-      PassedHidden: 0
-      FailedHidden: 0
-      NotRunHidden: 0
-      m_SearchString: 
-      selectedCategoryMask: 0
-      availableCategories:
-      - Uncategorized
-    m_SelectedOption: 0
-  m_EditModeTestListGUI:
-    m_Window: {fileID: 17}
-    m_NewResultList:
-    - id: 1000
-      uniqueId: '[Algorithmo][suite]'
-      name: Algorithmo
-      fullName: Algorithmo
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 
-      parentUniqueId: 
-    m_ResultText: 
-    m_ResultStacktrace: 
-    m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: a6ff26f4ffffff7f
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: 0
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
-      m_SearchString: 
-    m_TestRunnerUIFilter:
-      PassedHidden: 0
-      FailedHidden: 0
-      NotRunHidden: 0
-      m_SearchString: 
-      selectedCategoryMask: 0
-      availableCategories:
-      - Uncategorized
---- !u!114 &18
+    x: 717
+    y: 0
+    width: 706
+    height: 581
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 15}
+  m_Panes:
+  - {fileID: 15}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5094,39 +335,175 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: InspectorWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 1922
+    y: 0
+    width: 576
+    height: 1347
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 20}
+  m_Panes:
+  - {fileID: 20}
+  - {fileID: 21}
+  - {fileID: 22}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &15
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 275, y: 50}
+  m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: Inspector
-    m_Image: {fileID: -6905738622615590433, guid: 0000000000000000d000000000000000, type: 0}
+    m_Text: Game
+    m_Image: {fileID: -2087823869225018852, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2003
+    x: 3136
+    y: 839
+    width: 704
+    height: 560
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_SerializedViewNames: []
+  m_SerializedViewValues: []
+  m_PlayModeViewName: GameView
+  m_ShowGizmos: 0
+  m_TargetDisplay: 0
+  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+  m_TargetSize: {x: 704, y: 539}
+  m_TextureFilterMode: 0
+  m_TextureHideFlags: 61
+  m_RenderIMGUI: 1
+  m_EnterPlayModeBehavior: 0
+  m_UseMipMap: 0
+  m_VSyncEnabled: 0
+  m_Gizmos: 0
+  m_Stats: 0
+  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_ZoomArea:
+    m_HRangeLocked: 0
+    m_VRangeLocked: 0
+    hZoomLockedByDefault: 0
+    vZoomLockedByDefault: 0
+    m_HBaseRangeMin: -352
+    m_HBaseRangeMax: 352
+    m_VBaseRangeMin: -269.5
+    m_VBaseRangeMax: 269.5
+    m_HAllowExceedBaseRangeMin: 1
+    m_HAllowExceedBaseRangeMax: 1
+    m_VAllowExceedBaseRangeMin: 1
+    m_VAllowExceedBaseRangeMax: 1
+    m_ScaleWithWindow: 0
+    m_HSlider: 0
+    m_VSlider: 0
+    m_IgnoreScrollWheelUntilClicked: 0
+    m_EnableMouseInput: 1
+    m_EnableSliderZoomHorizontal: 0
+    m_EnableSliderZoomVertical: 0
+    m_UniformScale: 1
+    m_UpDirection: 1
+    m_DrawArea:
+      serializedVersion: 2
+      x: 0
+      y: 21
+      width: 704
+      height: 539
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 352, y: 269.5}
+    m_MarginLeft: 0
+    m_MarginRight: 0
+    m_MarginTop: 0
+    m_MarginBottom: 0
+    m_LastShownAreaInsideMargins:
+      serializedVersion: 2
+      x: -352
+      y: -269.5
+      width: 704
+      height: 539
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 704, y: 560}
+  m_ClearInEditMode: 1
+  m_NoCameraWarning: 1
+  m_LowResolutionForAspectRatios: 01000000000000000000
+  m_XRRenderMode: 0
+  m_RenderTexture: {fileID: 0}
+--- !u!114 &16
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Hierarchy
+    m_Image: {fileID: -590624980919486359, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1920
     y: 73
-    width: 474
+    width: 243
     height: 1326
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
-  m_ObjectsLockedBeforeSerialization: []
-  m_InstanceIDsLockedBeforeSerialization: 
-  m_PreviewResizer:
-    m_CachedPref: -160
-    m_ControlHash: -371814159
-    m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
-  m_GlobalObjectId: 
-  m_InspectorMode: 0
-  m_LockTracker:
-    m_IsLocked: 0
-  m_PreviewWindow: {fileID: 0}
---- !u!114 &19
+  m_SceneHierarchy:
+    m_TreeViewState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 2cfbffff34fbffff36fbffffd8590000
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_ExpandedScenes: []
+    m_CurrenRootInstanceID: 0
+    m_LockTracker:
+      m_IsLocked: 0
+    m_CurrentSortingName: TransformSorting
+  m_WindowGUID: a175dd78f3299054f8e0251617f4042d
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5146,9 +523,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 243
+    x: 2164
     y: 73
-    width: 251
+    width: 253
     height: 1326
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -5166,7 +543,8 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders: []
+    m_Folders:
+    - Assets/Scripts/_BinarySearch
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 0
@@ -5181,7 +559,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 9e5a0000
     m_LastClickedID: 23198
-    m_ExpandedIDs: ffffffff000000009e5a0000a05a0000b65a0000bc5a0000765b000000ca9a3b
+    m_ExpandedIDs: 00000000985a00009a5a00009c5a00009e5a0000a05a0000a25a0000a45a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -5209,7 +587,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff000000009e5a0000a05a0000b65a0000bc5a0000765b000000ca9a3b
+    m_ExpandedIDs: ffffffff00000000985a00009a5a00009c5a00009e5a0000a05a0000a25a0000a45a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -5265,99 +643,7 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 115
---- !u!114 &20
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Game
-    m_Image: {fileID: -2087823869225018852, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 1502
-    y: 1008
-    width: 499
-    height: 391
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-  m_SerializedViewNames: []
-  m_SerializedViewValues: []
-  m_PlayModeViewName: GameView
-  m_ShowGizmos: 0
-  m_TargetDisplay: 0
-  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 499, y: 370}
-  m_TextureFilterMode: 0
-  m_TextureHideFlags: 61
-  m_RenderIMGUI: 1
-  m_EnterPlayModeBehavior: 0
-  m_UseMipMap: 0
-  m_VSyncEnabled: 0
-  m_Gizmos: 0
-  m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
-  m_ZoomArea:
-    m_HRangeLocked: 0
-    m_VRangeLocked: 0
-    hZoomLockedByDefault: 0
-    vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -249.5
-    m_HBaseRangeMax: 249.5
-    m_VBaseRangeMin: -185
-    m_VBaseRangeMax: 185
-    m_HAllowExceedBaseRangeMin: 1
-    m_HAllowExceedBaseRangeMax: 1
-    m_VAllowExceedBaseRangeMin: 1
-    m_VAllowExceedBaseRangeMax: 1
-    m_ScaleWithWindow: 0
-    m_HSlider: 0
-    m_VSlider: 0
-    m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
-    m_EnableSliderZoomHorizontal: 0
-    m_EnableSliderZoomVertical: 0
-    m_UniformScale: 1
-    m_UpDirection: 1
-    m_DrawArea:
-      serializedVersion: 2
-      x: 0
-      y: 21
-      width: 499
-      height: 370
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 249.5, y: 185}
-    m_MarginLeft: 0
-    m_MarginRight: 0
-    m_MarginTop: 0
-    m_MarginBottom: 0
-    m_LastShownAreaInsideMargins:
-      serializedVersion: 2
-      x: -249.5
-      y: -185
-      width: 499
-      height: 370
-    m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 499, y: 391}
-  m_ClearInEditMode: 1
-  m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 01000000000000000000
-  m_XRRenderMode: 0
-  m_RenderTexture: {fileID: 0}
---- !u!114 &21
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5377,10 +663,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 496
+    x: 2419
     y: 73
-    width: 1505
-    height: 914
+    width: 1421
+    height: 745
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -5582,9 +868,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: 120.26048, y: -104.76814, z: 293.199}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: 120.26048, y: -104.76814, z: 293.199}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -5631,13 +917,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+    m_Target: {x: -0.31177917, y: -0.2464193, z: 0.08408493, w: -0.91379255}
     speed: 2
-    m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+    m_Value: {x: -0.31177673, y: -0.24641736, z: 0.084084265, w: -0.91378534}
   m_Size:
-    m_Target: 10
+    m_Target: 236.56963
     speed: 2
-    m_Value: 10
+    m_Value: 226.38242
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -5662,7 +948,35 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &22
+--- !u!114 &19
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Console
+    m_Image: {fileID: 111653112392082826, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 2419
+    y: 839
+    width: 715
+    height: 560
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5671,31 +985,4636 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 200, y: 200}
+  m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: Hierarchy
-    m_Image: {fileID: -590624980919486359, guid: 0000000000000000d000000000000000, type: 0}
+    m_Text: Inspector
+    m_Image: {fileID: -6905738622615590433, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
+    x: 3842
     y: 73
-    width: 242
+    width: 575
     height: 1326
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
-  m_SceneHierarchy:
-    m_TreeViewState:
+  m_ObjectsLockedBeforeSerialization: []
+  m_InstanceIDsLockedBeforeSerialization: 
+  m_PreviewResizer:
+    m_CachedPref: -160
+    m_ControlHash: -371814159
+    m_PrefName: Preview_InspectorPreview
+  m_LastInspectedObjectInstanceID: -1
+  m_LastVerticalScrollValue: 0
+  m_GlobalObjectId: 
+  m_InspectorMode: 0
+  m_LockTracker:
+    m_IsLocked: 0
+  m_PreviewWindow: {fileID: 0}
+--- !u!114 &21
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13401, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Test Runner
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 2202
+    y: 73
+    width: 275
+    height: 1326
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_Spl:
+    ID: 181
+    splitterInitialOffset: 261
+    currentActiveSplitter: -1
+    realSizes:
+    - 190
+    - 1066
+    relativeSizes:
+    - 0.15127389
+    - 0.8487261
+    minSizes:
+    - 32
+    - 32
+    maxSizes:
+    - 0
+    - 0
+    lastTotalSize: 1256
+    splitSize: 6
+    xOffset: 0
+    m_Version: 1
+    oldRealSizes: 
+    oldMinSizes: 
+    oldMaxSizes: 
+    oldSplitSize: 0
+  m_TestTypeToolbarIndex: 0
+  m_PlayModeTestListGUI:
+    m_Window: {fileID: 21}
+    m_NewResultList:
+    - id: 1005
+      uniqueId: '[Algorithmo][suite]'
+      name: Algorithmo
+      fullName: Algorithmo
+      resultStatus: 1
+      duration: 0.2234435
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1008
+      uniqueId: '[BinarySearchTest][D:/Projects/Algorithmo-Project/Algorithmo/Library/ScriptAssemblies/BinarySearchTest.dll][suite]'
+      name: BinarySearchTest.dll
+      fullName: D:/Projects/Algorithmo-Project/Algorithmo/Library/ScriptAssemblies/BinarySearchTest.dll
+      resultStatus: 1
+      duration: 0.0573074
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1005
+      parentUniqueId: '[Algorithmo][suite]'
+    - id: 1006
+      uniqueId: BinarySearchTest.dll/[BinarySearchTest][suite]
+      name: BinarySearchTest
+      fullName: BinarySearchTest
+      resultStatus: 1
+      duration: 0.0485504
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1008
+      parentUniqueId: '[BinarySearchTest][D:/Projects/Algorithmo-Project/Algorithmo/Library/ScriptAssemblies/BinarySearchTest.dll][suite]'
+    - id: 1007
+      uniqueId: BinarySearchTest.dll/BinarySearchTest/[BinarySearchTest][BinarySearchTest.BinarySearchTestResults]
+      name: BinarySearchTestResults
+      fullName: BinarySearchTest.BinarySearchTestResults
+      resultStatus: 1
+      duration: 0.0298568
+      messages: 
+      output: '0 == 0
+
+        213 == 213
+
+        602 == 602
+
+        43 == 43
+
+        676
+        == 676
+
+        245 == 245
+
+        940 == 940
+
+        209 == 209
+
+        668
+        == 668
+
+        561 == 561
+
+        278 == 278
+
+        840 == 840
+
+        226
+        == 226
+
+        510 == 510
+
+        398 == 398
+
+        112 == 112
+
+        838
+        == 838
+
+        432 == 432
+
+        11 == 11
+
+        628 == 628
+
+        670
+        == 670
+
+        352 == 352
+
+        508 == 508
+
+        114 == 114
+
+        492
+        == 492
+
+        196 == 196
+
+        936 == 936
+
+        959 == 959
+
+        952
+        == 952
+
+        897 == 897
+
+        199 == 199
+
+        878 == 878
+
+        666
+        == 666
+
+        514 == 514
+
+        877 == 877
+
+        397 == 397
+
+        649
+        == 649
+
+        225 == 225
+
+        546 == 546
+
+        930 == 930
+
+        383
+        == 383
+
+        587 == 587
+
+        953 == 953
+
+        546 == 546
+
+        609
+        == 609
+
+        811 == 811
+
+        294 == 294
+
+        310 == 310
+
+        473
+        == 473
+
+        97 == 97
+
+        892 == 892
+
+        398 == 398
+
+        883
+        == 883
+
+        860 == 860
+
+        918 == 918
+
+        50 == 50
+
+        465
+        == 465
+
+        43 == 43
+
+        113 == 113
+
+        557 == 557
+
+        229
+        == 229
+
+        316 == 316
+
+        751 == 751
+
+        488 == 488
+
+        881
+        == 881
+
+        525 == 525
+
+        479 == 479
+
+        765 == 765
+
+        987
+        == 987
+
+        907 == 907
+
+        525 == 525
+
+        152 == 152
+
+        762
+        == 762
+
+        582 == 582
+
+        163 == 163
+
+        987 == 987
+
+        208
+        == 208
+
+        542 == 542
+
+        197 == 197
+
+        51 == 51
+
+        944
+        == 944
+
+        698 == 698
+
+        58 == 58
+
+        706 == 706
+
+        249
+        == 249
+
+        752 == 752
+
+        877 == 877
+
+        680 == 680
+
+        641
+        == 641
+
+        621 == 621
+
+        284 == 284
+
+        435 == 435
+
+        341
+        == 341
+
+        786 == 786
+
+        579 == 579
+
+        1 == 1
+
+        154
+        == 154
+
+        767 == 767
+
+        214 == 214
+
+        152 == 152
+
+        869
+        == 869
+
+        339 == 339
+
+        173 == 173
+
+        624 == 624
+
+        415
+        == 415
+
+        470 == 470
+
+        889 == 889
+
+        99 == 99
+
+        786
+        == 786
+
+        779 == 779
+
+        209 == 209
+
+        317 == 317
+
+        45
+        == 45
+
+        317 == 317
+
+        16 == 16
+
+        467 == 467
+
+        521
+        == 521
+
+        343 == 343
+
+        531 == 531
+
+        294 == 294
+
+        997
+        == 997
+
+        23 == 23
+
+        31 == 31
+
+        666 == 666
+
+        751
+        == 751
+
+        954 == 954
+
+        423 == 423
+
+        10 == 10
+
+        52
+        == 52
+
+        146 == 146
+
+        994 == 994
+
+        731 == 731
+
+        755
+        == 755
+
+        678 == 678
+
+        920 == 920
+
+        281 == 281
+
+        177
+        == 177
+
+        260 == 260
+
+        867 == 867
+
+        100 == 100
+
+        857
+        == 857
+
+        670 == 670
+
+        152 == 152
+
+        971 == 971
+
+        92
+        == 92
+
+        868 == 868
+
+        459 == 459
+
+        340 == 340
+
+        42
+        == 42
+
+        254 == 254
+
+        749 == 749
+
+        516 == 516
+
+        594
+        == 594
+
+        399 == 399
+
+        249 == 249
+
+        371 == 371
+
+        115
+        == 115
+
+        175 == 175
+
+        833 == 833
+
+        505 == 505
+
+        478
+        == 478
+
+        117 == 117
+
+        816 == 816
+
+        448 == 448
+
+        37
+        == 37
+
+        442 == 442
+
+        731 == 731
+
+        890 == 890
+
+        174
+        == 174
+
+        343 == 343
+
+        692 == 692
+
+        875 == 875
+
+        284
+        == 284
+
+        294 == 294
+
+        331 == 331
+
+        779 == 779
+
+        784
+        == 784
+
+        39 == 39
+
+        270 == 270
+
+        427 == 427
+
+        704
+        == 704
+
+        500 == 500
+
+        225 == 225
+
+        119 == 119
+
+        417
+        == 417
+
+        499 == 499
+
+        432 == 432
+
+        390 == 390
+
+        67
+        == 67
+
+        870 == 870
+
+        478 == 478
+
+        159 == 159
+
+        891
+        == 891
+
+        974 == 974
+
+        281 == 281
+
+        327 == 327
+
+        217
+        == 217
+
+        482 == 482
+
+        258 == 258
+
+        640 == 640
+
+        74
+        == 74
+
+        789 == 789
+
+        976 == 976
+
+        177 == 177
+
+        4
+        == 4
+
+        293 == 293
+
+        438 == 438
+
+        85 == 85
+
+        445
+        == 445
+
+        945 == 945
+
+        460 == 460
+
+        836 == 836
+
+        876
+        == 876
+
+        514 == 514
+
+        171 == 171
+
+        981 == 981
+
+        171
+        == 171
+
+        913 == 913
+
+        578 == 578
+
+        40 == 40
+
+        87
+        == 87
+
+        163 == 163
+
+        511 == 511
+
+        974 == 974
+
+        335
+        == 335
+
+        384 == 384
+
+        245 == 245
+
+        802 == 802
+
+        767
+        == 767
+
+        255 == 255
+
+        323 == 323
+
+        244 == 244
+
+        162
+        == 162
+
+        290 == 290
+
+        591 == 591
+
+        415 == 415
+
+        585
+        == 585
+
+        207 == 207
+
+        508 == 508
+
+        772 == 772
+
+        907
+        == 907
+
+        265 == 265
+
+        311 == 311
+
+        974 == 974
+
+        467
+        == 467
+
+        143 == 143
+
+        61 == 61
+
+        159 == 159
+
+        86
+        == 86
+
+        577 == 577
+
+        219 == 219
+
+        436 == 436
+
+        138
+        == 138
+
+        418 == 418
+
+        116 == 116
+
+        413 == 413
+
+        229
+        == 229
+
+        772 == 772
+
+        581 == 581
+
+        684 == 684
+
+        995
+        == 995
+
+        206 == 206
+
+        531 == 531
+
+        22 == 22
+
+        687
+        == 687
+
+        659 == 659
+
+        145 == 145
+
+        850 == 850
+
+        201
+        == 201
+
+        873 == 873
+
+        985 == 985
+
+        665 == 665
+
+        328
+        == 328
+
+        102 == 102
+
+        612 == 612
+
+        88 == 88
+
+        485
+        == 485
+
+        313 == 313
+
+        973 == 973
+
+        534 == 534
+
+        201
+        == 201
+
+        433 == 433
+
+        384 == 384
+
+        802 == 802
+
+        7
+        == 7
+
+        742 == 742
+
+        64 == 64
+
+        32 == 32
+
+        953
+        == 953
+
+        893 == 893
+
+        361 == 361
+
+        109 == 109
+
+        258
+        == 258
+
+        452 == 452
+
+        247 == 247
+
+        459 == 459
+
+        616
+        == 616
+
+        583 == 583
+
+        522 == 522
+
+        457 == 457
+
+        39
+        == 39
+
+        241 == 241
+
+        243 == 243
+
+        819 == 819
+
+        144
+        == 144
+
+        145 == 145
+
+        989 == 989
+
+        866 == 866
+
+        113
+        == 113
+
+        516 == 516
+
+        26 == 26
+
+        925 == 925
+
+        404
+        == 404
+
+        84 == 84
+
+        249 == 249
+
+        943 == 943
+
+        408
+        == 408
+
+        475 == 475
+
+        393 == 393
+
+        643 == 643
+
+        725
+        == 725
+
+        33 == 33
+
+        61 == 61
+
+        381 == 381
+
+        215
+        == 215
+
+        794 == 794
+
+        87 == 87
+
+        633 == 633
+
+        253
+        == 253
+
+        681 == 681
+
+        9 == 9
+
+        572 == 572
+
+        935
+        == 935
+
+        11 == 11
+
+        466 == 466
+
+        378 == 378
+
+        585
+        == 585
+
+        438 == 438
+
+        332 == 332
+
+        464 == 464
+
+        454
+        == 454
+
+        536 == 536
+
+        302 == 302
+
+        211 == 211
+
+        120
+        == 120
+
+        384 == 384
+
+        377 == 377
+
+        132 == 132
+
+        463
+        == 463
+
+        181 == 181
+
+        597 == 597
+
+        1 == 1
+
+        254
+        == 254
+
+        344 == 344
+
+        982 == 982
+
+        197 == 197
+
+        56
+        == 56
+
+        175 == 175
+
+        807 == 807
+
+        576 == 576
+
+        70
+        == 70
+
+        154 == 154
+
+        87 == 87
+
+        597 == 597
+
+        119
+        == 119
+
+        511 == 511
+
+        843 == 843
+
+        709 == 709
+
+        524
+        == 524
+
+        235 == 235
+
+        683 == 683
+
+        211 == 211
+
+        61
+        == 61
+
+        958 == 958
+
+        563 == 563
+
+        605 == 605
+
+        112
+        == 112
+
+        650 == 650
+
+        499 == 499
+
+        942 == 942
+
+        57
+        == 57
+
+        583 == 583
+
+        205 == 205
+
+        45 == 45
+
+        739
+        == 739
+
+        115 == 115
+
+        234 == 234
+
+        183 == 183
+
+        5
+        == 5
+
+        968 == 968
+
+        698 == 698
+
+        343 == 343
+
+        369
+        == 369
+
+        101 == 101
+
+        929 == 929
+
+        251 == 251
+
+        193
+        == 193
+
+        448 == 448
+
+        806 == 806
+
+        199 == 199
+
+        586
+        == 586
+
+        699 == 699
+
+        283 == 283
+
+        82 == 82
+
+        605
+        == 605
+
+        541 == 541
+
+        782 == 782
+
+        595 == 595
+
+        405
+        == 405
+
+        584 == 584
+
+        825 == 825
+
+        947 == 947
+
+        394
+        == 394
+
+        589 == 589
+
+        833 == 833
+
+        857 == 857
+
+        180
+        == 180
+
+        948 == 948
+
+        111 == 111
+
+        606 == 606
+
+        585
+        == 585
+
+        64 == 64
+
+        829 == 829
+
+        516 == 516
+
+        357
+        == 357
+
+        41 == 41
+
+        599 == 599
+
+        186 == 186
+
+        267
+        == 267
+
+        317 == 317
+
+        923 == 923
+
+        652 == 652
+
+        718
+        == 718
+
+        895 == 895
+
+        384 == 384
+
+        962 == 962
+
+        310
+        == 310
+
+        128 == 128
+
+        214 == 214
+
+        324 == 324
+
+        191
+        == 191
+
+        666 == 666
+
+        1 == 1
+
+        964 == 964
+
+        698
+        == 698
+
+        15 == 15
+
+        986 == 986
+
+        572 == 572
+
+        763
+        == 763
+
+        36 == 36
+
+        208 == 208
+
+        958 == 958
+
+        481
+        == 481
+
+        635 == 635
+
+        88 == 88
+
+        612 == 612
+
+        281
+        == 281
+
+        736 == 736
+
+        266 == 266
+
+        606 == 606
+
+        198
+        == 198
+
+        167 == 167
+
+        724 == 724
+
+        564 == 564
+
+        849
+        == 849
+
+        43 == 43
+
+        643 == 643
+
+        455 == 455
+
+        720
+        == 720
+
+        531 == 531
+
+        847 == 847
+
+        809 == 809
+
+        478
+        == 478
+
+        758 == 758
+
+        443 == 443
+
+        798 == 798
+
+        15
+        == 15
+
+        190 == 190
+
+        260 == 260
+
+        856 == 856
+
+        865
+        == 865
+
+        847 == 847
+
+        891 == 891
+
+        398 == 398
+
+        112
+        == 112
+
+        340 == 340
+
+        409 == 409
+
+        551 == 551
+
+        887
+        == 887
+
+        689 == 689
+
+        5 == 5
+
+        696 == 696
+
+        679
+        == 679
+
+        659 == 659
+
+        794 == 794
+
+        27 == 27
+
+        728
+        == 728
+
+        734 == 734
+
+        19 == 19
+
+        36 == 36
+
+        873
+        == 873
+
+        470 == 470
+
+        83 == 83
+
+        887 == 887
+
+        388
+        == 388
+
+        524 == 524
+
+        292 == 292
+
+        391 == 391
+
+        48
+        == 48
+
+        653 == 653
+
+        273 == 273
+
+        497 == 497
+
+        226
+        == 226
+
+        602 == 602
+
+        868 == 868
+
+        80 == 80
+
+        778
+        == 778
+
+        395 == 395
+
+        78 == 78
+
+        488 == 488
+
+        936
+        == 936
+
+        671 == 671
+
+        699 == 699
+
+        740 == 740
+
+        782
+        == 782
+
+        996 == 996
+
+        400 == 400
+
+        513 == 513
+
+        702
+        == 702
+
+        122 == 122
+
+        179 == 179
+
+        652 == 652
+
+        938
+        == 938
+
+        805 == 805
+
+        837 == 837
+
+        8 == 8
+
+        811
+        == 811
+
+        677 == 677
+
+        166 == 166
+
+        462 == 462
+
+        742
+        == 742
+
+        836 == 836
+
+        585 == 585
+
+        112 == 112
+
+        474
+        == 474
+
+        709 == 709
+
+        41 == 41
+
+        781 == 781
+
+        181
+        == 181
+
+        131 == 131
+
+        588 == 588
+
+        595 == 595
+
+        629
+        == 629
+
+        420 == 420
+
+        898 == 898
+
+        910 == 910
+
+        337
+        == 337
+
+        772 == 772
+
+        809 == 809
+
+        139 == 139
+
+        949
+        == 949
+
+        568 == 568
+
+        590 == 590
+
+        237 == 237
+
+        527
+        == 527
+
+        404 == 404
+
+        221 == 221
+
+        177 == 177
+
+        3
+        == 3
+
+        377 == 377
+
+        752 == 752
+
+        789 == 789
+
+        987
+        == 987
+
+        621 == 621
+
+        130 == 130
+
+        572 == 572
+
+        202
+        == 202
+
+        437 == 437
+
+        989 == 989
+
+        687 == 687
+
+        674
+        == 674
+
+        920 == 920
+
+        566 == 566
+
+        242 == 242
+
+        98
+        == 98
+
+        779 == 779
+
+        171 == 171
+
+        567 == 567
+
+        65
+        == 65
+
+        652 == 652
+
+        238 == 238
+
+        970 == 970
+
+        244
+        == 244
+
+        144 == 144
+
+        319 == 319
+
+        410 == 410
+
+        800
+        == 800
+
+        745 == 745
+
+        358 == 358
+
+        630 == 630
+
+        942
+        == 942
+
+        19 == 19
+
+        951 == 951
+
+        893 == 893
+
+        688
+        == 688
+
+        563 == 563
+
+        224 == 224
+
+        482 == 482
+
+        378
+        == 378
+
+        560 == 560
+
+        170 == 170
+
+        651 == 651
+
+        906
+        == 906
+
+        226 == 226
+
+        779 == 779
+
+        950 == 950
+
+        86
+        == 86
+
+        30 == 30
+
+        432 == 432
+
+        708 == 708
+
+        979
+        == 979
+
+        373 == 373
+
+        827 == 827
+
+        851 == 851
+
+        135
+        == 135
+
+        874 == 874
+
+        786 == 786
+
+        669 == 669
+
+        552
+        == 552
+
+        550 == 550
+
+        899 == 899
+
+        605 == 605
+
+        98
+        == 98
+
+        390 == 390
+
+        433 == 433
+
+        127 == 127
+
+        458
+        == 458
+
+        802 == 802
+
+        252 == 252
+
+        584 == 584
+
+        509
+        == 509
+
+        773 == 773
+
+        923 == 923
+
+        483 == 483
+
+        910
+        == 910
+
+        954 == 954
+
+        867 == 867
+
+        348 == 348
+
+        267
+        == 267
+
+        786 == 786
+
+        746 == 746
+
+        427 == 427
+
+        552
+        == 552
+
+        42 == 42
+
+        968 == 968
+
+        878 == 878
+
+        646
+        == 646
+
+        232 == 232
+
+        171 == 171
+
+        708 == 708
+
+        504
+        == 504
+
+        512 == 512
+
+        837 == 837
+
+        615 == 615
+
+        612
+        == 612
+
+        552 == 552
+
+        796 == 796
+
+        720 == 720
+
+        210
+        == 210
+
+        742 == 742
+
+        54 == 54
+
+        400 == 400
+
+        337
+        == 337
+
+        516 == 516
+
+        975 == 975
+
+        585 == 585
+
+        412
+        == 412
+
+        621 == 621
+
+        960 == 960
+
+        649 == 649
+
+        574
+        == 574
+
+        703 == 703
+
+        112 == 112
+
+        800 == 800
+
+        41
+        == 41
+
+        701 == 701
+
+        721 == 721
+
+        45 == 45
+
+        129
+        == 129
+
+        191 == 191
+
+        57 == 57
+
+        499 == 499
+
+        613
+        == 613
+
+        625 == 625
+
+        774 == 774
+
+        8 == 8
+
+        48
+        == 48
+
+        289 == 289
+
+        585 == 585
+
+        975 == 975
+
+        113
+        == 113
+
+        589 == 589
+
+        98 == 98
+
+        78 == 78
+
+        920
+        == 920
+
+        498 == 498
+
+        644 == 644
+
+        110 == 110
+
+        703
+        == 703
+
+        727 == 727
+
+        774 == 774
+
+        150 == 150
+
+        565
+        == 565
+
+        206 == 206
+
+        979 == 979
+
+        402 == 402
+
+        475
+        == 475
+
+        998 == 998
+
+        548 == 548
+
+        816 == 816
+
+        764
+        == 764
+
+        740 == 740
+
+        301 == 301
+
+        782 == 782
+
+        1
+        == 1
+
+        996 == 996
+
+        906 == 906
+
+        42 == 42
+
+        825
+        == 825
+
+        495 == 495
+
+        554 == 554
+
+        921 == 921
+
+        925
+        == 925
+
+        894 == 894
+
+        62 == 62
+
+        886 == 886
+
+        286
+        == 286
+
+        388 == 388
+
+        955 == 955
+
+        186 == 186
+
+        84
+        == 84
+
+        274 == 274
+
+        106 == 106
+
+        727 == 727
+
+        905
+        == 905
+
+        950 == 950
+
+        188 == 188
+
+        881 == 881
+
+        628
+        == 628
+
+        998 == 998
+
+        388 == 388
+
+        136 == 136
+
+        558
+        == 558
+
+        282 == 282
+
+        343 == 343
+
+        170 == 170
+
+        626
+        == 626
+
+        0 == 0
+
+        233 == 233
+
+        645 == 645
+
+        362
+        == 362
+
+        935 == 935
+
+        712 == 712
+
+        100 == 100
+
+        708
+        == 708
+
+        587 == 587
+
+        252 == 252
+
+        605 == 605
+
+        564
+        == 564
+
+        499 == 499
+
+        715 == 715
+
+        253 == 253
+
+        633
+        == 633
+
+        239 == 239
+
+        522 == 522
+
+        934 == 934
+
+        810
+        == 810
+
+        53 == 53
+
+        652 == 652
+
+        561 == 561
+
+        574
+        == 574
+
+        269 == 269
+
+        973 == 973
+
+        160 == 160
+
+        564
+        == 564
+
+        475 == 475
+
+        598 == 598
+
+        903 == 903
+
+        385
+        == 385
+
+        434 == 434
+
+        39 == 39
+
+        624 == 624
+
+        559
+        == 559
+
+        1 == 1
+
+        746 == 746
+
+        841 == 841
+
+        358
+        == 358
+
+        56 == 56
+
+        908 == 908
+
+        128 == 128
+
+        302
+        == 302
+
+        389 == 389
+
+        20 == 20
+
+        563 == 563
+
+        674
+        == 674
+
+        988 == 988
+
+        237 == 237
+
+        926 == 926
+
+        94
+        == 94
+
+        108 == 108
+
+        712 == 712
+
+        846 == 846
+
+        129
+        == 129
+
+        246 == 246
+
+        631 == 631
+
+        482 == 482
+
+        193
+        == 193
+
+        790 == 790
+
+        380 == 380
+
+        340 == 340
+
+        366
+        == 366
+
+        983 == 983
+
+        93 == 93
+
+        683 == 683
+
+        137
+        == 137
+
+        66 == 66
+
+        732 == 732
+
+        426 == 426
+
+        385
+        == 385
+
+        47 == 47
+
+        786 == 786
+
+        582 == 582
+
+        192
+        == 192
+
+        698 == 698
+
+        427 == 427
+
+        309 == 309
+
+        769
+        == 769
+
+        282 == 282
+
+        692 == 692
+
+        109 == 109
+
+        654
+        == 654
+
+        521 == 521
+
+        863 == 863
+
+        98 == 98
+
+        289
+        == 289
+
+        606 == 606
+
+        0 == 0
+
+        333 == 333
+
+        627
+        == 627
+
+        728 == 728
+
+        419 == 419
+
+        671 == 671
+
+        2
+        == 2
+
+        850 == 850
+
+        998 == 998
+
+        277 == 277
+
+        700
+        == 700
+
+        600 == 600
+
+        669 == 669
+
+        125 == 125
+
+        225
+        == 225
+
+        288 == 288
+
+        580 == 580
+
+        719 == 719
+
+        119
+        == 119
+
+        977 == 977
+
+        146 == 146
+
+        547 == 547
+
+        324
+        == 324
+
+        295 == 295
+
+        828 == 828
+
+        633 == 633
+
+        434
+        == 434
+
+        736 == 736
+
+        601 == 601
+
+        822 == 822
+
+        29
+        == 29
+
+        105 == 105
+
+        147 == 147
+
+        437 == 437
+
+        728
+        == 728
+
+        149 == 149
+
+        203 == 203
+
+        917 == 917
+
+        331
+        == 331
+
+        576 == 576
+
+        868 == 868
+
+        176 == 176
+
+        467
+        == 467
+
+        886 == 886
+
+        206 == 206
+
+        950 == 950
+
+        751
+        == 751
+
+        535 == 535
+
+        820 == 820
+
+        673 == 673
+
+        370
+        == 370
+
+        253 == 253
+
+        802 == 802
+
+        117 == 117
+
+        607
+        == 607
+
+        84 == 84
+
+        89 == 89
+
+        21 == 21
+
+        632
+        == 632
+
+        407 == 407
+
+        29 == 29
+
+        575 == 575
+
+        922
+        == 922
+
+        196 == 196
+
+        714 == 714
+
+        440 == 440
+
+        302
+        == 302
+
+        26 == 26
+
+        367 == 367
+
+        996 == 996
+
+        301
+        == 301
+
+        423 == 423
+
+        791 == 791
+
+        18 == 18
+
+        137
+        == 137
+
+        910 == 910
+
+        531 == 531
+
+        542 == 542
+
+        969
+        == 969
+
+        913 == 913
+
+        793 == 793
+
+        930 == 930
+
+        337
+        == 337
+
+        462 == 462
+
+        528 == 528
+
+        867 == 867
+
+        102
+        == 102
+
+        841 == 841
+
+        983 == 983
+
+        417 == 417
+
+        233
+        == 233
+
+        336 == 336
+
+        748 == 748
+
+        946 == 946
+
+        506
+        == 506
+
+        238 == 238
+
+        463 == 463
+
+        153 == 153
+
+        938
+        == 938
+
+        212 == 212
+
+        91 == 91
+
+        515 == 515
+
+        828
+        == 828
+
+        375 == 375
+
+        545 == 545
+
+        269 == 269
+
+        410
+        == 410
+
+        663 == 663
+
+        52 == 52
+
+        682 == 682
+
+        350
+        == 350
+
+        877 == 877
+
+        220 == 220
+
+        433 == 433
+
+        8
+        == 8
+
+        2 == 2
+
+        808 == 808
+
+        196 == 196
+
+        394
+        == 394
+
+        475 == 475
+
+        884 == 884
+
+        732 == 732
+
+        590
+        == 590
+
+        654 == 654
+
+        71 == 71
+
+        986 == 986
+
+        439
+        == 439
+
+        380 == 380
+
+        322 == 322
+
+        324 == 324
+
+        27
+        == 27
+
+        649 == 649
+
+        386 == 386
+
+        310 == 310
+
+        981
+        == 981
+
+        965 == 965
+
+        942 == 942
+
+        918 == 918
+
+        850
+        == 850
+
+        244 == 244
+
+        784 == 784
+
+        36 == 36
+
+        685
+        == 685
+
+        355 == 355
+
+        421 == 421
+
+        333 == 333
+
+        422
+        == 422
+
+        247 == 247
+
+        539 == 539
+
+        760 == 760
+
+        774
+        == 774
+
+        766 == 766
+
+        541 == 541
+
+        546 == 546
+
+        999
+        == 999
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: BinarySearchTest.dll/[BinarySearchTest][suite]
+    m_ResultText: 'BinarySearchTestResults (0.030s)
+
+      ---
+
+      0 == 0
+
+      213
+      == 213
+
+      602 == 602
+
+      43 == 43
+
+      676 == 676
+
+      245 == 245
+
+      940
+      == 940
+
+      209 == 209
+
+      668 == 668
+
+      561 == 561
+
+      278 ==
+      278
+
+      840 == 840
+
+      226 == 226
+
+      510 == 510
+
+      398 == 398
+
+      112
+      == 112
+
+      838 == 838
+
+      432 == 432
+
+      11 == 11
+
+      628 == 628
+
+      670
+      == 670
+
+      352 == 352
+
+      508 == 508
+
+      114 == 114
+
+      492 ==
+      492
+
+      196 == 196
+
+      936 == 936
+
+      959 == 959
+
+      952 == 952
+
+      897
+      == 897
+
+      199 == 199
+
+      878 == 878
+
+      666 == 666
+
+      514 ==
+      514
+
+      877 == 877
+
+      397 == 397
+
+      649 == 649
+
+      225 == 225
+
+      546
+      == 546
+
+      930 == 930
+
+      383 == 383
+
+      587 == 587
+
+      953 ==
+      953
+
+      546 == 546
+
+      609 == 609
+
+      811 == 811
+
+      294 == 294
+
+      310
+      == 310
+
+      473 == 473
+
+      97 == 97
+
+      892 == 892
+
+      398 == 398
+
+      883
+      == 883
+
+      860 == 860
+
+      918 == 918
+
+      50 == 50
+
+      465 == 465
+
+      43
+      == 43
+
+      113 == 113
+
+      557 == 557
+
+      229 == 229
+
+      316 == 316
+
+      751
+      == 751
+
+      488 == 488
+
+      881 == 881
+
+      525 == 525
+
+      479 ==
+      479
+
+      765 == 765
+
+      987 == 987
+
+      907 == 907
+
+      525 == 525
+
+      152
+      == 152
+
+      762 == 762
+
+      582 == 582
+
+      163 == 163
+
+      987 ==
+      987
+
+      208 == 208
+
+      542 == 542
+
+      197 == 197
+
+      51 == 51
+
+      944
+      == 944
+
+      698 == 698
+
+      58 == 58
+
+      706 == 706
+
+      249 == 249
+
+      752
+      == 752
+
+      877 == 877
+
+      680 == 680
+
+      641 == 641
+
+      621 ==
+      621
+
+      284 == 284
+
+      435 == 435
+
+      341 == 341
+
+      786 == 786
+
+      579
+      == 579
+
+      1 == 1
+
+      154 == 154
+
+      767 == 767
+
+      214 == 214
+
+      152
+      == 152
+
+      869 == 869
+
+      339 == 339
+
+      173 == 173
+
+      624 ==
+      624
+
+      415 == 415
+
+      470 == 470
+
+      889 == 889
+
+      99 == 99
+
+      786
+      == 786
+
+      779 == 779
+
+      209 == 209
+
+      317 == 317
+
+      45 == 45
+
+      317
+      == 317
+
+      16 == 16
+
+      467 == 467
+
+      521 == 521
+
+      343 == 343
+
+      531
+      == 531
+
+      294 == 294
+
+      997 == 997
+
+      23 == 23
+
+      31 == 31
+
+      666
+      == 666
+
+      751 == 751
+
+      954 == 954
+
+      423 == 423
+
+      10 == 10
+
+      52
+      == 52
+
+      146 == 146
+
+      994 == 994
+
+      731 == 731
+
+      755 == 755
+
+      678
+      == 678
+
+      920 == 920
+
+      281 == 281
+
+      177 == 177
+
+      260 ==
+      260
+
+      867 == 867
+
+      100 == 100
+
+      857 == 857
+
+      670 == 670
+
+      152
+      == 152
+
+      971 == 971
+
+      92 == 92
+
+      868 == 868
+
+      459 == 459
+
+      340
+      == 340
+
+      42 == 42
+
+      254 == 254
+
+      749 == 749
+
+      516 == 516
+
+      594
+      == 594
+
+      399 == 399
+
+      249 == 249
+
+      371 == 371
+
+      115 ==
+      115
+
+      175 == 175
+
+      833 == 833
+
+      505 == 505
+
+      478 == 478
+
+      117
+      == 117
+
+      816 == 816
+
+      448 == 448
+
+      37 == 37
+
+      442 == 442
+
+      731
+      == 731
+
+      890 == 890
+
+      174 == 174
+
+      343 == 343
+
+      692 ==
+      692
+
+      875 == 875
+
+      284 == 284
+
+      294 == 294
+
+      331 == 331
+
+      779
+      == 779
+
+      784 == 784
+
+      39 == 39
+
+      270 == 270
+
+      427 == 427
+
+      704
+      == 704
+
+      500 == 500
+
+      225 == 225
+
+      119 == 119
+
+      417 ==
+      417
+
+      499 == 499
+
+      432 == 432
+
+      390 == 390
+
+      67 == 67
+
+      870
+      == 870
+
+      478 == 478
+
+      159 == 159
+
+      891 == 891
+
+      974 ==
+      974
+
+      281 == 281
+
+      327 == 327
+
+      217 == 217
+
+      482 == 482
+
+      258
+      == 258
+
+      640 == 640
+
+      74 == 74
+
+      789 == 789
+
+      976 == 976
+
+      177
+      == 177
+
+      4 == 4
+
+      293 == 293
+
+      438 == 438
+
+      85 == 85
+
+      445
+      == 445
+
+      945 == 945
+
+      460 == 460
+
+      836 == 836
+
+      876 ==
+      876
+
+      514 == 514
+
+      171 == 171
+
+      981 == 981
+
+      171 == 171
+
+      913
+      == 913
+
+      578 == 578
+
+      40 == 40
+
+      87 == 87
+
+      163 == 163
+
+      511
+      == 511
+
+      974 == 974
+
+      335 == 335
+
+      384 == 384
+
+      245 ==
+      245
+
+      802 == 802
+
+      767 == 767
+
+      255 == 255
+
+      323 == 323
+
+      244
+      == 244
+
+      162 == 162
+
+      290 == 290
+
+      591 == 591
+
+      415 ==
+      415
+
+      585 == 585
+
+      207 == 207
+
+      508 == 508
+
+      772 == 772
+
+      907
+      == 907
+
+      265 == 265
+
+      311 == 311
+
+      974 == 974
+
+      467 ==
+      467
+
+      143 == 143
+
+      61 == 61
+
+      159 == 159
+
+      86 == 86
+
+      577
+      == 577
+
+      219 == 219
+
+      436 == 436
+
+      138 == 138
+
+      418 ==
+      418
+
+      116 == 116
+
+      413 == 413
+
+      229 == 229
+
+      772 == 772
+
+      581
+      == 581
+
+      684 == 684
+
+      995 == 995
+
+      206 == 206
+
+      531 ==
+      531
+
+      22 == 22
+
+      687 == 687
+
+      659 == 659
+
+      145 == 145
+
+      850
+      == 850
+
+      201 == 201
+
+      873 == 873
+
+      985 == 985
+
+      665 ==
+      665
+
+      328 == 328
+
+      102 == 102
+
+      612 == 612
+
+      88 == 88
+
+      485
+      == 485
+
+      313 == 313
+
+      973 == 973
+
+      534 == 534
+
+      201 ==
+      201
+
+      433 == 433
+
+      384 == 384
+
+      802 == 802
+
+      7 == 7
+
+      742
+      == 742
+
+      64 == 64
+
+      32 == 32
+
+      953 == 953
+
+      893 == 893
+
+      361
+      == 361
+
+      109 == 109
+
+      258 == 258
+
+      452 == 452
+
+      247 ==
+      247
+
+      459 == 459
+
+      616 == 616
+
+      583 == 583
+
+      522 == 522
+
+      457
+      == 457
+
+      39 == 39
+
+      241 == 241
+
+      243 == 243
+
+      819 == 819
+
+      144
+      == 144
+
+      145 == 145
+
+      989 == 989
+
+      866 == 866
+
+      113 ==
+      113
+
+      516 == 516
+
+      26 == 26
+
+      925 == 925
+
+      404 == 404
+
+      84
+      == 84
+
+      249 == 249
+
+      943 == 943
+
+      408 == 408
+
+      475 == 475
+
+      393
+      == 393
+
+      643 == 643
+
+      725 == 725
+
+      33 == 33
+
+      61 == 61
+
+      381
+      == 381
+
+      215 == 215
+
+      794 == 794
+
+      87 == 87
+
+      633 == 633
+
+      253
+      == 253
+
+      681 == 681
+
+      9 == 9
+
+      572 == 572
+
+      935 == 935
+
+      11
+      == 11
+
+      466 == 466
+
+      378 == 378
+
+      585 == 585
+
+      438 == 438
+
+      332
+      == 332
+
+      464 == 464
+
+      454 == 454
+
+      536 == 536
+
+      302 ==
+      302
+
+      211 == 211
+
+      120 == 120
+
+      384 == 384
+
+      377 == 377
+
+      132
+      == 132
+
+      463 == 463
+
+      181 == 181
+
+      597 == 597
+
+      1 == 1
+
+      254
+      == 254
+
+      344 == 344
+
+      982 == 982
+
+      197 == 197
+
+      56 == 56
+
+      175
+      == 175
+
+      807 == 807
+
+      576 == 576
+
+      70 == 70
+
+      154 == 154
+
+      87
+      == 87
+
+      597 == 597
+
+      119 == 119
+
+      511 == 511
+
+      843 == 843
+
+      709
+      == 709
+
+      524 == 524
+
+      235 == 235
+
+      683 == 683
+
+      211 ==
+      211
+
+      61 == 61
+
+      958 == 958
+
+      563 == 563
+
+      605 == 605
+
+      112
+      == 112
+
+      650 == 650
+
+      499 == 499
+
+      942 == 942
+
+      57 == 57
+
+      583
+      == 583
+
+      205 == 205
+
+      45 == 45
+
+      739 == 739
+
+      115 == 115
+
+      234
+      == 234
+
+      183 == 183
+
+      5 == 5
+
+      968 == 968
+
+      698 == 698
+
+      343
+      == 343
+
+      369 == 369
+
+      101 == 101
+
+      929 == 929
+
+      251 ==
+      251
+
+      193 == 193
+
+      448 == 448
+
+      806 == 806
+
+      199 == 199
+
+      586
+      == 586
+
+      699 == 699
+
+      283 == 283
+
+      82 == 82
+
+      605 == 605
+
+      541
+      == 541
+
+      782 == 782
+
+      595 == 595
+
+      405 == 405
+
+      584 ==
+      584
+
+      825 == 825
+
+      947 == 947
+
+      394 == 394
+
+      589 == 589
+
+      833
+      == 833
+
+      857 == 857
+
+      180 == 180
+
+      948 == 948
+
+      111 ==
+      111
+
+      606 == 606
+
+      585 == 585
+
+      64 == 64
+
+      829 == 829
+
+      516
+      == 516
+
+      357 == 357
+
+      41 == 41
+
+      599 == 599
+
+      186 == 186
+
+      267
+      == 267
+
+      317 == 317
+
+      923 == 923
+
+      652 == 652
+
+      718 ==
+      718
+
+      895 == 895
+
+      384 == 384
+
+      962 == 962
+
+      310 == 310
+
+      128
+      == 128
+
+      214 == 214
+
+      324 == 324
+
+      191 == 191
+
+      666 ==
+      666
+
+      1 == 1
+
+      964 == 964
+
+      698 == 698
+
+      15 == 15
+
+      986
+      == 986
+
+      572 == 572
+
+      763 == 763
+
+      36 == 36
+
+      208 == 208
+
+      958
+      == 958
+
+      481 == 481
+
+      635 == 635
+
+      88 == 88
+
+      612 == 612
+
+      281
+      == 281
+
+      736 == 736
+
+      266 == 266
+
+      606 == 606
+
+      198 ==
+      198
+
+      167 == 167
+
+      724 == 724
+
+      564 == 564
+
+      849 == 849
+
+      43
+      == 43
+
+      643 == 643
+
+      455 == 455
+
+      720 == 720
+
+      531 == 531
+
+      847
+      == 847
+
+      809 == 809
+
+      478 == 478
+
+      758 == 758
+
+      443 ==
+      443
+
+      798 == 798
+
+      15 == 15
+
+      190 == 190
+
+      260 == 260
+
+      856
+      == 856
+
+      865 == 865
+
+      847 == 847
+
+      891 == 891
+
+      398 ==
+      398
+
+      112 == 112
+
+      340 == 340
+
+      409 == 409
+
+      551 == 551
+
+      887
+      == 887
+
+      689 == 689
+
+      5 == 5
+
+      696 == 696
+
+      679 == 679
+
+      659
+      == 659
+
+      794 == 794
+
+      27 == 27
+
+      728 == 728
+
+      734 == 734
+
+      19
+      == 19
+
+      36 == 36
+
+      873 == 873
+
+      470 == 470
+
+      83 == 83
+
+      887
+      == 887
+
+      388 == 388
+
+      524 == 524
+
+      292 == 292
+
+      391 ==
+      391
+
+      48 == 48
+
+      653 == 653
+
+      273 == 273
+
+      497 == 497
+
+      226
+      == 226
+
+      602 == 602
+
+      868 == 868
+
+      80 == 80
+
+      778 == 778
+
+      395
+      == 395
+
+      78 == 78
+
+      488 == 488
+
+      936 == 936
+
+      671 == 671
+
+      699
+      == 699
+
+      740 == 740
+
+      782 == 782
+
+      996 == 996
+
+      400 ==
+      400
+
+      513 == 513
+
+      702 == 702
+
+      122 == 122
+
+      179 == 179
+
+      652
+      == 652
+
+      938 == 938
+
+      805 == 805
+
+      837 == 837
+
+      8 == 8
+
+      811
+      == 811
+
+      677 == 677
+
+      166 == 166
+
+      462 == 462
+
+      742 ==
+      742
+
+      836 == 836
+
+      585 == 585
+
+      112 == 112
+
+      474 == 474
+
+      709
+      == 709
+
+      41 == 41
+
+      781 == 781
+
+      181 == 181
+
+      131 == 131
+
+      588
+      == 588
+
+      595 == 595
+
+      629 == 629
+
+      420 == 420
+
+      898 ==
+      898
+
+      910 == 910
+
+      337 == 337
+
+      772 == 772
+
+      809 == 809
+
+      139
+      == 139
+
+      949 == 949
+
+      568 == 568
+
+      590 == 590
+
+      237 ==
+      237
+
+      527 == 527
+
+      404 == 404
+
+      221 == 221
+
+      177 == 177
+
+      3
+      == 3
+
+      377 == 377
+
+      752 == 752
+
+      789 == 789
+
+      987 == 987
+
+      621
+      == 621
+
+      130 == 130
+
+      572 == 572
+
+      202 == 202
+
+      437 ==
+      437
+
+      989 == 989
+
+      687 == 687
+
+      674 == 674
+
+      920 == 920
+
+      566
+      == 566
+
+      242 == 242
+
+      98 == 98
+
+      779 == 779
+
+      171 == 171
+
+      567
+      == 567
+
+      65 == 65
+
+      652 == 652
+
+      238 == 238
+
+      970 == 970
+
+      244
+      == 244
+
+      144 == 144
+
+      319 == 319
+
+      410 == 410
+
+      800 ==
+      800
+
+      745 == 745
+
+      358 == 358
+
+      630 == 630
+
+      942 == 942
+
+      19
+      == 19
+
+      951 == 951
+
+      893 == 893
+
+      688 == 688
+
+      563 == 563
+
+      224
+      == 224
+
+      482 == 482
+
+      378 == 378
+
+      560 == 560
+
+      170 ==
+      170
+
+      651 == 651
+
+      906 == 906
+
+      226 == 226
+
+      779 == 779
+
+      950
+      == 950
+
+      86 == 86
+
+      30 == 30
+
+      432 == 432
+
+      708 == 708
+
+      979
+      == 979
+
+      373 == 373
+
+      827 == 827
+
+      851 == 851
+
+      135 ==
+      135
+
+      874 == 874
+
+      786 == 786
+
+      669 == 669
+
+      552 == 552
+
+      550
+      == 550
+
+      899 == 899
+
+      605 == 605
+
+      98 == 98
+
+      390 == 390
+
+      433
+      == 433
+
+      127 == 127
+
+      458 == 458
+
+      802 == 802
+
+      252 ==
+      252
+
+      584 == 584
+
+      509 == 509
+
+      773 == 773
+
+      923 == 923
+
+      483
+      == 483
+
+      910 == 910
+
+      954 == 954
+
+      867 == 867
+
+      348 ==
+      348
+
+      267 == 267
+
+      786 == 786
+
+      746 == 746
+
+      427 == 427
+
+      552
+      == 552
+
+      42 == 42
+
+      968 == 968
+
+      878 == 878
+
+      646 == 646
+
+      232
+      == 232
+
+      171 == 171
+
+      708 == 708
+
+      504 == 504
+
+      512 ==
+      512
+
+      837 == 837
+
+      615 == 615
+
+      612 == 612
+
+      552 == 552
+
+      796
+      == 796
+
+      720 == 720
+
+      210 == 210
+
+      742 == 742
+
+      54 == 54
+
+      400
+      == 400
+
+      337 == 337
+
+      516 == 516
+
+      975 == 975
+
+      585 ==
+      585
+
+      412 == 412
+
+      621 == 621
+
+      960 == 960
+
+      649 == 649
+
+      574
+      == 574
+
+      703 == 703
+
+      112 == 112
+
+      800 == 800
+
+      41 == 41
+
+      701
+      == 701
+
+      721 == 721
+
+      45 == 45
+
+      129 == 129
+
+      191 == 191
+
+      57
+      == 57
+
+      499 == 499
+
+      613 == 613
+
+      625 == 625
+
+      774 == 774
+
+      8
+      == 8
+
+      48 == 48
+
+      289 == 289
+
+      585 == 585
+
+      975 == 975
+
+      113
+      == 113
+
+      589 == 589
+
+      98 == 98
+
+      78 == 78
+
+      920 == 920
+
+      498
+      == 498
+
+      644 == 644
+
+      110 == 110
+
+      703 == 703
+
+      727 ==
+      727
+
+      774 == 774
+
+      150 == 150
+
+      565 == 565
+
+      206 == 206
+
+      979
+      == 979
+
+      402 == 402
+
+      475 == 475
+
+      998 == 998
+
+      548 ==
+      548
+
+      816 == 816
+
+      764 == 764
+
+      740 == 740
+
+      301 == 301
+
+      782
+      == 782
+
+      1 == 1
+
+      996 == 996
+
+      906 == 906
+
+      42 == 42
+
+      825
+      == 825
+
+      495 == 495
+
+      554 == 554
+
+      921 == 921
+
+      925 ==
+      925
+
+      894 == 894
+
+      62 == 62
+
+      886 == 886
+
+      286 == 286
+
+      388
+      == 388
+
+      955 == 955
+
+      186 == 186
+
+      84 == 84
+
+      274 == 274
+
+      106
+      == 106
+
+      727 == 727
+
+      905 == 905
+
+      950 == 950
+
+      188 ==
+      188
+
+      881 == 881
+
+      628 == 628
+
+      998 == 998
+
+      388 == 388
+
+      136
+      == 136
+
+      558 == 558
+
+      282 == 282
+
+      343 == 343
+
+      170 ==
+      170
+
+      626 == 626
+
+      0 == 0
+
+      233 == 233
+
+      645 == 645
+
+      362
+      == 362
+
+      935 == 935
+
+      712 == 712
+
+      100 == 100
+
+      708 ==
+      708
+
+      587 == 587
+
+      252 == 252
+
+      605 == 605
+
+      564 == 564
+
+      499
+      == 499
+
+      715 == 715
+
+      253 == 253
+
+      633 == 633
+
+      239 ==
+      239
+
+      522 == 522
+
+      934 == 934
+
+      810 == 810
+
+      53 == 53
+
+      652
+      == 652
+
+      561 == 561
+
+      574 == 574
+
+      269 == 269
+
+      973 ==
+      973
+
+      160 == 160
+
+      564 == 564
+
+      475 == 475
+
+      598 == 598
+
+      903
+      == 903
+
+      385 == 385
+
+      434 == 434
+
+      39 == 39
+
+      624 == 624
+
+      559
+      == 559
+
+      1 == 1
+
+      746 == 746
+
+      841 == 841
+
+      358 == 358
+
+      56
+      == 56
+
+      908 == 908
+
+      128 == 128
+
+      302 == 302
+
+      389 == 389
+
+      20
+      == 20
+
+      563 == 563
+
+      674 == 674
+
+      988 == 988
+
+      237 == 237
+
+      926
+      == 926
+
+      94 == 94
+
+      108 == 108
+
+      712 == 712
+
+      846 == 846
+
+      129
+      == 129
+
+      246 == 246
+
+      631 == 631
+
+      482 == 482
+
+      193 ==
+      193
+
+      790 == 790
+
+      380 == 380
+
+      340 == 340
+
+      366 == 366
+
+      983
+      == 983
+
+      93 == 93
+
+      683 == 683
+
+      137 == 137
+
+      66 == 66
+
+      732
+      == 732
+
+      426 == 426
+
+      385 == 385
+
+      47 == 47
+
+      786 == 786
+
+      582
+      == 582
+
+      192 == 192
+
+      698 == 698
+
+      427 == 427
+
+      309 ==
+      309
+
+      769 == 769
+
+      282 == 282
+
+      692 == 692
+
+      109 == 109
+
+      654
+      == 654
+
+      521 == 521
+
+      863 == 863
+
+      98 == 98
+
+      289 == 289
+
+      606
+      == 606
+
+      0 == 0
+
+      333 == 333
+
+      627 == 627
+
+      728 == 728
+
+      419
+      == 419
+
+      671 == 671
+
+      2 == 2
+
+      850 == 850
+
+      998 == 998
+
+      277
+      == 277
+
+      700 == 700
+
+      600 == 600
+
+      669 == 669
+
+      125 ==
+      125
+
+      225 == 225
+
+      288 == 288
+
+      580 == 580
+
+      719 == 719
+
+      119
+      == 119
+
+      977 == 977
+
+      146 == 146
+
+      547 == 547
+
+      324 ==
+      324
+
+      295 == 295
+
+      828 == 828
+
+      633 == 633
+
+      434 == 434
+
+      736
+      == 736
+
+      601 == 601
+
+      822 == 822
+
+      29 == 29
+
+      105 == 105
+
+      147
+      == 147
+
+      437 == 437
+
+      728 == 728
+
+      149 == 149
+
+      203 ==
+      203
+
+      917 == 917
+
+      331 == 331
+
+      576 == 576
+
+      868 == 868
+
+      176
+      == 176
+
+      467 == 467
+
+      886 == 886
+
+      206 == 206
+
+      950 ==
+      950
+
+      751 == 751
+
+      535 == 535
+
+      820 == 820
+
+      673 == 673
+
+      370
+      == 370
+
+      253 == 253
+
+      802 == 802
+
+      117 == 117
+
+      607 ==
+      607
+
+      84 == 84
+
+      89 == 89
+
+      21 == 21
+
+      632 == 632
+
+      407
+      == 407
+
+      29 == 29
+
+      575 == 575
+
+      922 == 922
+
+      196 == 196
+
+      714
+      == 714
+
+      440 == 440
+
+      302 == 302
+
+      26 == 26
+
+      367 == 367
+
+      996
+      == 996
+
+      301 == 301
+
+      423 == 423
+
+      791 == 791
+
+      18 == 18
+
+      137
+      == 137
+
+      910 == 910
+
+      531 == 531
+
+      542 == 542
+
+      969 ==
+      969
+
+      913 == 913
+
+      793 == 793
+
+      930 == 930
+
+      337 == 337
+
+      462
+      == 462
+
+      528 == 528
+
+      867 == 867
+
+      102 == 102
+
+      841 ==
+      841
+
+      983 == 983
+
+      417 == 417
+
+      233 == 233
+
+      336 == 336
+
+      748
+      == 748
+
+      946 == 946
+
+      506 == 506
+
+      238 == 238
+
+      463 ==
+      463
+
+      153 == 153
+
+      938 == 938
+
+      212 == 212
+
+      91 == 91
+
+      515
+      == 515
+
+      828 == 828
+
+      375 == 375
+
+      545 == 545
+
+      269 ==
+      269
+
+      410 == 410
+
+      663 == 663
+
+      52 == 52
+
+      682 == 682
+
+      350
+      == 350
+
+      877 == 877
+
+      220 == 220
+
+      433 == 433
+
+      8 == 8
+
+      2
+      == 2
+
+      808 == 808
+
+      196 == 196
+
+      394 == 394
+
+      475 == 475
+
+      884
+      == 884
+
+      732 == 732
+
+      590 == 590
+
+      654 == 654
+
+      71 == 71
+
+      986
+      == 986
+
+      439 == 439
+
+      380 == 380
+
+      322 == 322
+
+      324 ==
+      324
+
+      27 == 27
+
+      649 == 649
+
+      386 == 386
+
+      310 == 310
+
+      981
+      == 981
+
+      965 == 965
+
+      942 == 942
+
+      918 == 918
+
+      850 ==
+      850
+
+      244 == 244
+
+      784 == 784
+
+      36 == 36
+
+      685 == 685
+
+      355
+      == 355
+
+      421 == 421
+
+      333 == 333
+
+      422 == 422
+
+      247 ==
+      247
+
+      539 == 539
+
+      760 == 760
+
+      774 == 774
+
+      766 == 766
+
+      541
+      == 541
+
+      546 == 546
+
+      999 == 999'
+    m_ResultStacktrace: 
+    m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: acb8fffffeb8ffff0acaffff5acbffffbacbffff06ccfffff0dcffff24ddffff70ddffff5ceeffffaeeeffffeeeeffff36fbffff
+      m_SelectedIDs: 69b493d7
+      m_LastClickedID: -678185879
+      m_ExpandedIDs: 3f155cc6a6ff26f432aa7f46ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -5713,9 +5632,91 @@ MonoBehaviour:
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 0}
       m_SearchString: 
-    m_ExpandedScenes: []
-    m_CurrenRootInstanceID: 0
-    m_LockTracker:
-      m_IsLocked: 0
-    m_CurrentSortingName: TransformSorting
-  m_WindowGUID: a175dd78f3299054f8e0251617f4042d
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories:
+      - Uncategorized
+    m_SelectedOption: 0
+  m_EditModeTestListGUI:
+    m_Window: {fileID: 21}
+    m_NewResultList:
+    - id: 1000
+      uniqueId: '[Algorithmo][suite]'
+      name: Algorithmo
+      fullName: Algorithmo
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    m_ResultText: 
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: a6ff26f4ffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories:
+      - Uncategorized
+--- !u!114 &22
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12079, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 390, y: 390}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Lighting
+    m_Image: {fileID: 8394858894532624064, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 2003
+    y: 73
+    width: 474
+    height: 1326
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
