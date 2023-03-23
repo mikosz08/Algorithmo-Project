@@ -4,6 +4,8 @@ public class BinarySearchButtons : MonoBehaviour
 {
     [SerializeField] private GameObject goButtonHoverText = null;
 
+    public bool IsActive { get { return goButtonHoverText.activeInHierarchy; } }
+
     private void Start()
     {
         goButtonHoverText.SetActive(false);
@@ -17,4 +19,7 @@ public class BinarySearchButtons : MonoBehaviour
         }
         goButtonHoverText.SetActive(isActive);
     }
+
+
+
 }

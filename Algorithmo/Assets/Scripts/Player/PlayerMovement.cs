@@ -50,7 +50,12 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         SetInputs();
-        if (IsGrounded && isDirectionSet)
+        if (!isDirectionSet)
+        {
+            playerRigidbody.Sleep();
+            return;
+        }
+        if (IsGrounded)
         {
             Move();
         }
@@ -61,6 +66,7 @@ public class PlayerMovement : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
         direction = new Vector3(horizontalInput, 0, verticalInput).normalized;
+        
         isDirectionSet = !direction.Equals(Vector3.zero);
     }
 
