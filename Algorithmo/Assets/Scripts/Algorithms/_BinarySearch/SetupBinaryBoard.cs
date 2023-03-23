@@ -10,6 +10,8 @@ public class SetupBinaryBoard : MonoBehaviour
 
     [SerializeField] private GameObject prefab = null;
 
+    [SerializeField] private GameObject spawnPoint = null;
+
     [SerializeField] private Transform instantiateParent = null;
     [SerializeField] private Vector3 prefabSize = new Vector3(1, 1, 1);
     [SerializeField] private Vector2 instantiateOffset = Vector2.right;
@@ -30,12 +32,6 @@ public class SetupBinaryBoard : MonoBehaviour
         binarySearch = GetComponent<BinarySearch>();
     }
 
-    private void Start()
-    {
-        SetUpBoard();
-        binarySearch.SetData(PrefabsList);
-    }
-
     private void Update()
     {
         if (setupDone && !boardActivated && activationCoroutine == null)
@@ -44,29 +40,34 @@ public class SetupBinaryBoard : MonoBehaviour
         }
     }
 
+    public void Go(){
+        SetUpBoard();
+        binarySearch.SetData(PrefabsList);
+    }
+
     private void SetUpBoard()
     {
         PrefabsList = new List<GameObject>();
 
-        var position = transform.position;
-        var startY = position.y;
+        var _position = spawnPoint.transform.position;
+        var _rotation = spawnPoint.transform.rotation;
+        var startY = _position.y;
 
         for (var x = 0; x < boardSize.x; ++x)
         {
             // Instantiate given prefabs, on given position and inside given parent:
             for (var y = 0; y < boardSize.y; ++y)
             {
-                var _prefab = Instantiate(prefab, position, transform.rotation, instantiateParent);
+                var _prefab = Instantiate(prefab, _position, _rotation, instantiateParent);
                 PrefabsList.Add(_prefab);
-                position.y += instantiateOffset.y;
+                _position.y += instantiateOffset.y;
             }
             // Update next prefab's spawn position:
-            position.x += instantiateOffset.x;
-            position.y = startY;
+            _position.x += instantiateOffset.x;
+            _position.y = startY;
         }
         var _index = PrefabsList.Count - 1;
         var _boardXPos = PrefabsList[_index].transform.position.x;
-        transform.position = new Vector3(_boardXPos / -2, 0, transform.position.z);
         setupDone = true;
     }
 

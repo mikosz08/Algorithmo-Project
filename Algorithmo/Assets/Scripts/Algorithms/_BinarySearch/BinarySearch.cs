@@ -8,13 +8,16 @@ public class BinarySearch : MonoBehaviour
 
     public void SetData(List<GameObject> objects)
     {
+        // Every time it should be a new list.
         this.dataset = new List<BinaryObject>();
 
+        // Creates BinaryObject list from given objects.
         foreach (var _object in objects)
         {
             this.dataset.Add(new BinaryObject(_object));
         }
 
+        // Resets BinaryObjects counter.
         BinaryObject.nextNumber = 0;
     }
 
@@ -24,28 +27,33 @@ public class BinarySearch : MonoBehaviour
         if (searchedNumber > dataSetSize)
         {
             Debug.Log("Searched Number is out of dataset bounds!");
-            return null;
+            return BinaryObject.Empty;
         }
 
+        // L - - - - - R
         var _left = 0;
         var _right = dataSetSize;
 
+        //         L <= R
         while (_left <= _right)
         {
+            // L - - - M - - R
             var _mid = (int)Math.Ceiling((_left + _right) / 2d);
             var _midObject = dataset[_mid];
 
             if (_midObject.Number == searchedNumber)
             {
-                // _midObject.Object.GetComponent<SpawnedPrefabManager>().ChangeColor(Color.green);
+                // M
                 return _midObject;
             }
             else if (_midObject.Number < searchedNumber)
             {
+                // L M R
                 _left = _mid + 1;
             }
             else
             {
+                // L - M - R
                 _right = _mid - 1;
             }
 
@@ -68,7 +76,7 @@ public class BinarySearch : MonoBehaviour
 
         public static int nextNumber = 0;
 
-        public static BinaryObject Empty { get {return new BinaryObject(new GameObject(), -1); } }
+        public static BinaryObject Empty { get { return new BinaryObject(new GameObject(), -1); } }
 
         public BinaryObject(GameObject gameObject)
         {
@@ -86,7 +94,6 @@ public class BinarySearch : MonoBehaviour
         {
             return $"Prefab: {this.Object.name} Number: {this.Number}";
         }
-
     }
 
 }
