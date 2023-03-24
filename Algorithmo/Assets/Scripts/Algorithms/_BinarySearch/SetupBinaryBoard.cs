@@ -27,6 +27,8 @@ public class SetupBinaryBoard : MonoBehaviour
 
     public List<GameObject> PrefabsList { get; private set; } = null;
 
+    public bool BeginSetupBoard { get; internal set; }
+
     private void Awake()
     {
         binarySearch = GetComponent<BinarySearch>();
@@ -34,16 +36,19 @@ public class SetupBinaryBoard : MonoBehaviour
 
     private void Update()
     {
+        if(BeginSetupBoard && !setupDone){
+            SetUpBoard();
+        }
+
         if (setupDone && !boardActivated && activationCoroutine == null)
         {
             activationCoroutine = StartCoroutine(ActivatePrefabs());
         }
     }
 
-    public void Go(){
-        SetUpBoard();
-        binarySearch.SetData(PrefabsList);
-    }
+    // public void Go(){
+    //     binarySearch.SetData(PrefabsList);
+    // }
 
     private void SetUpBoard()
     {

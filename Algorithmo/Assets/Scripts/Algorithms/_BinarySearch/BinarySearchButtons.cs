@@ -3,6 +3,7 @@ using UnityEngine;
 public class BinarySearchButtons : MonoBehaviour
 {
     [SerializeField] private GameObject goButtonHoverText = null;
+    [SerializeField] private SetupBinaryBoard setupBinaryBoard = null;
 
     public bool IsActive { get { return goButtonHoverText.activeInHierarchy; } }
 
@@ -11,13 +12,19 @@ public class BinarySearchButtons : MonoBehaviour
         goButtonHoverText.SetActive(false);
     }
 
-    public void SwitchActive(bool isActive)
+    private void Update() {
+        if (IsActive && Input.GetKey(KeyCode.F)){
+            setupBinaryBoard.BeginSetupBoard = true;
+        }
+    }
+
+    public void SwitchActive(bool flag)
     {
-        if (goButtonHoverText.activeInHierarchy == isActive)
+        if (IsActive == flag)
         {
             return;
         }
-        goButtonHoverText.SetActive(isActive);
+        goButtonHoverText.SetActive(flag);
     }
 
 
