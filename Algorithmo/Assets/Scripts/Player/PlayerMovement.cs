@@ -51,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
     {
         SetInputs();
 
-        if (!isDirectionSet)
+        if (!isDirectionSet && IsGrounded)
         { 
             playerRigidbody.Sleep();
             return;

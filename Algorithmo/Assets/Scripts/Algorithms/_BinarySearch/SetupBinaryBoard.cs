@@ -9,24 +9,23 @@ public class SetupBinaryBoard : MonoBehaviour
     private BinarySearch binarySearch;
 
     [SerializeField] private GameObject prefab = null;
-
     [SerializeField] private GameObject spawnPoint = null;
 
     [SerializeField] private Transform instantiateParent = null;
+
     [SerializeField] private Vector3 prefabSize = new Vector3(1, 1, 1);
     [SerializeField] private Vector2 instantiateOffset = Vector2.right;
     [SerializeField] private Vector2 boardSize = Vector2.zero;
 
     [SerializeField] private float spawnDelay = 0.1f;
 
-    [SerializeField] public bool setupDone { get; private set; } = false;
-    [SerializeField] public bool boardActivated { get; private set; } = false;
-
     private Vector3 boardPosition = Vector3.zero;
     private Coroutine activationCoroutine = null;
 
     public List<GameObject> PrefabsList { get; private set; } = null;
 
+    [SerializeField] public bool setupDone { get; private set; } = false;
+    [SerializeField] public bool boardActivated { get; private set; } = false;
     public bool BeginSetupBoard { get; internal set; }
 
     private void Awake()
