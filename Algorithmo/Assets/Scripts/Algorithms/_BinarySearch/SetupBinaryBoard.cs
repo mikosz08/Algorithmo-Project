@@ -13,19 +13,19 @@ public class SetupBinaryBoard : MonoBehaviour
 
     [SerializeField] private Transform instantiateParent = null;
 
-    [SerializeField] private Vector3 prefabSize = new Vector3(1, 1, 1);
+    //[SerializeField] private Vector3 prefabSize = new Vector3(1, 1, 1);
     [SerializeField] private Vector2 instantiateOffset = Vector2.right;
     [SerializeField] private Vector2 boardSize = Vector2.zero;
 
     [SerializeField] private float spawnDelay = 0.1f;
 
-    private Vector3 boardPosition = Vector3.zero;
+    //private Vector3 boardPosition = Vector3.zero;
     private Coroutine activationCoroutine = null;
 
     public List<GameObject> PrefabsList { get; private set; } = null;
 
-    [SerializeField] public bool setupDone { get; private set; } = false;
-    [SerializeField] public bool boardActivated { get; private set; } = false;
+    [SerializeField] public bool SetupDone { get; private set; } = false;
+    [SerializeField] public bool BoardActivated { get; private set; } = false;
     public bool BeginSetupBoard { get; internal set; }
 
     private void Awake()
@@ -35,11 +35,11 @@ public class SetupBinaryBoard : MonoBehaviour
 
     private void Update()
     {
-        if(BeginSetupBoard && !setupDone){
+        if(BeginSetupBoard && !SetupDone){
             SetUpBoard();
         }
 
-        if (setupDone && !boardActivated && activationCoroutine == null)
+        if (SetupDone && !BoardActivated && activationCoroutine == null)
         {
             activationCoroutine = StartCoroutine(ActivatePrefabs());
         }
@@ -71,8 +71,8 @@ public class SetupBinaryBoard : MonoBehaviour
             _position.y = startY;
         }
         var _index = PrefabsList.Count - 1;
-        var _boardXPos = PrefabsList[_index].transform.position.x;
-        setupDone = true;
+        //var _boardXPos = PrefabsList[_index].transform.position.x;
+        SetupDone = true;
     }
 
     private IEnumerator ActivatePrefabs()
@@ -83,6 +83,6 @@ public class SetupBinaryBoard : MonoBehaviour
             prefab.GetComponent<SpawnedPrefabManager>().Activate();
             yield return new WaitForSeconds(spawnDelay);
         }
-        boardActivated = true;
+        BoardActivated = true;
     }
 }

@@ -5,28 +5,35 @@ public class PlayerRaycast : MonoBehaviour
     [SerializeField] private float maxRayDistance = 100.0f;
     private RaycastHit rayHit;
 
-    private BinarySearchButtons previousButtonsBehaviour = null;
+    private ConsoleButton seenConsoleButton = null;
 
     private void Update()
+    {
+        Scan();
+    }
+
+    private void Scan()
     {
         var ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2.0f, Screen.height / 2.0f, 0));
         Debug.DrawRay(ray.origin, ray.direction * maxRayDistance, Color.green);
 
         if (Physics.Raycast(ray, out rayHit, maxRayDistance))
         {
-            var buttonsBehaviour = rayHit.collider.gameObject.GetComponent<BinarySearchButtons>();
-            if (rayHit.collider.CompareTag("ButtonObject"))
+            if (rayHit.collider.CompareTag("ConsoleButton"))
             {
-                buttonsBehaviour.SwitchActive(true);
-                previousButtonsBehaviour = buttonsBehaviour;
+                seenConsoleButton = rayHit.collider.GetComponent<ConsoleButton>();
+                seenConsoleButton.ShowCanvasText(true);
+                if (Input.GetKeyDown(KeyCode.F))
+                {
+                    seenConsoleButton.FireButton();
+                }
             }
-            else if (previousButtonsBehaviour != null)
+            else if (seenConsoleButton != null)
             {
-                previousButtonsBehaviour.SwitchActive(false);
-                previousButtonsBehaviour = null;
+                seenConsoleButton.ShowCanvasText(false);
             }
-        }
 
+        }
     }
 
 }

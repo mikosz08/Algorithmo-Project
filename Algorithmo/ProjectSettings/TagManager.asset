@@ -6,7 +6,7 @@ TagManager:
   tags:
   - Ground
   - Button
-  - ButtonObject
+  - ConsoleButton
   layers:
   - Default
   - TransparentFX
