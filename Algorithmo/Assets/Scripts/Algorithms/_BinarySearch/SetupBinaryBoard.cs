@@ -6,20 +6,18 @@ using System.Linq;
 
 public class SetupBinaryBoard : MonoBehaviour
 {
-    private BinarySearch binarySearch;
+    //private BinarySearch binarySearch;
 
     [SerializeField] private GameObject prefab = null;
     [SerializeField] private GameObject spawnPoint = null;
 
     [SerializeField] private Transform instantiateParent = null;
 
-    //[SerializeField] private Vector3 prefabSize = new Vector3(1, 1, 1);
     [SerializeField] private Vector2 instantiateOffset = Vector2.right;
     [SerializeField] private Vector2 boardSize = Vector2.zero;
 
     [SerializeField] private float spawnDelay = 0.1f;
 
-    //private Vector3 boardPosition = Vector3.zero;
     private Coroutine activationCoroutine = null;
 
     public List<GameObject> PrefabsList { get; private set; } = null;
@@ -30,12 +28,13 @@ public class SetupBinaryBoard : MonoBehaviour
 
     private void Awake()
     {
-        binarySearch = GetComponent<BinarySearch>();
+        //binarySearch = GetComponent<BinarySearch>();
     }
 
     private void Update()
     {
-        if(BeginSetupBoard && !SetupDone){
+        if (BeginSetupBoard && !SetupDone)
+        {
             SetUpBoard();
         }
 
@@ -62,6 +61,7 @@ public class SetupBinaryBoard : MonoBehaviour
             // Instantiate given prefabs, on given position and inside given parent:
             for (var y = 0; y < boardSize.y; ++y)
             {
+
                 var _prefab = Instantiate(prefab, _position, _rotation, instantiateParent);
                 PrefabsList.Add(_prefab);
                 _position.y += instantiateOffset.y;
@@ -70,8 +70,6 @@ public class SetupBinaryBoard : MonoBehaviour
             _position.x += instantiateOffset.x;
             _position.y = startY;
         }
-        var _index = PrefabsList.Count - 1;
-        //var _boardXPos = PrefabsList[_index].transform.position.x;
         SetupDone = true;
     }
 
