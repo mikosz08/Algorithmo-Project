@@ -21,8 +21,16 @@ public class PlayerRaycast : MonoBehaviour
         {
             if (rayHit.collider.CompareTag("ConsoleButton"))
             {
-                seenConsoleButton = rayHit.collider.GetComponent<ConsoleButton>();
+                var consoleButton = rayHit.collider.GetComponent<ConsoleButton>();
+
+                if (seenConsoleButton != null && consoleButton != seenConsoleButton)
+                {
+                    seenConsoleButton.ShowCanvasText(false);
+                }
+
+                seenConsoleButton = consoleButton;
                 seenConsoleButton.ShowCanvasText(true);
+
                 if (Input.GetKeyDown(KeyCode.F))
                 {
                     seenConsoleButton.FireButton();
@@ -31,8 +39,8 @@ public class PlayerRaycast : MonoBehaviour
             else if (seenConsoleButton != null)
             {
                 seenConsoleButton.ShowCanvasText(false);
+                seenConsoleButton = null;
             }
-
         }
     }
 }

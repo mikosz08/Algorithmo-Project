@@ -2,17 +2,13 @@ using UnityEngine;
 
 public abstract class ConsoleButton : MonoBehaviour
 {
-
     [SerializeField] private GameObject buttonCanvasText = null;
 
-    private bool isActiveInHierarchy = false;
-
     public GameObject ButtonCanvasText { get => buttonCanvasText; set => buttonCanvasText = value; }
-    public bool IsActiveInHierarchy { get => ButtonCanvasText.activeInHierarchy; set => isActiveInHierarchy = value; }
 
-    private void Start()
+    private void Awake()
     {
-        ButtonCanvasText.SetActive(isActiveInHierarchy);
+        ButtonCanvasText.SetActive(false);
     }
 
     public abstract void FireButton();
@@ -21,5 +17,4 @@ public abstract class ConsoleButton : MonoBehaviour
     {
         buttonCanvasText.SetActive(isVisible);
     }
-
 }
