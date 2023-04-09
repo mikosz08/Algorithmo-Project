@@ -3,8 +3,8 @@ using UnityEngine;
 public class PlayerRaycast : MonoBehaviour
 {
     [SerializeField] private float maxRayDistance = 100.0f;
-    private RaycastHit rayHit;
 
+    private RaycastHit rayHit;
     private ConsoleButton seenConsoleButton = null;
 
     private void Update()
@@ -35,5 +35,4 @@ public class PlayerRaycast : MonoBehaviour
 
         }
     }
-
 }

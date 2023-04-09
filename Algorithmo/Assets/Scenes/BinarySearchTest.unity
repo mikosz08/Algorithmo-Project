@@ -357,31 +357,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2443496203194376297, guid: 2dd235f46a1c35d46b7f7ada91b582b2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.63
+      value: 6.04
       objectReference: {fileID: 0}
     - target: {fileID: 2443496203194376297, guid: 2dd235f46a1c35d46b7f7ada91b582b2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.25
+      value: -6.67
       objectReference: {fileID: 0}
     - target: {fileID: 2443496203194376297, guid: 2dd235f46a1c35d46b7f7ada91b582b2, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.96410245
       objectReference: {fileID: 0}
     - target: {fileID: 2443496203194376297, guid: 2dd235f46a1c35d46b7f7ada91b582b2, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.26553074
       objectReference: {fileID: 0}
     - target: {fileID: 2443496203194376297, guid: 2dd235f46a1c35d46b7f7ada91b582b2, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2443496203194376297, guid: 2dd235f46a1c35d46b7f7ada91b582b2, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2443496203194376297, guid: 2dd235f46a1c35d46b7f7ada91b582b2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 30.797
       objectReference: {fileID: 0}
     - target: {fileID: 2443496203194376297, guid: 2dd235f46a1c35d46b7f7ada91b582b2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -900,7 +900,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2399043211524463334, guid: ea2fdd68815f2bf4bb0df2196cc50eaa, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
-      value: 0
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2399043212513025939, guid: ea2fdd68815f2bf4bb0df2196cc50eaa, type: 3}
       propertyPath: m_IsActive
@@ -937,7 +937,7 @@ GameObject:
   m_Layer: 5
   m_Name: BinarySearchIndexChooser
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2141,7 +2141,7 @@ GameObject:
   m_Layer: 0
   m_Name: BinarySearch
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2178,7 +2178,7 @@ MonoBehaviour:
   instantiateParent: {fileID: 2900930358840019758}
   instantiateOffset: {x: 18, y: 18}
   boardSize: {x: 18, y: 18}
-  spawnDelay: 0.01
+  spawnDelay: 0.006
 --- !u!114 &9109645851955475787
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -7,6 +7,6 @@ public class BinarySearchGoButton : ConsoleButton
     public override void FireButton()
     {
         Debug.Log(gameObject.name + " Fired!!");
-        setupBinaryBoard.BeginSetupBoard = true;
+        setupBinaryBoard.ShouldSetupTheBoard = true;
     }
 }
