@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BS_IndexInput_MAT
+  m_Name: BS_Monitor_Arrow_Buttons_MAT
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ValidKeywords:
   - _EMISSION
@@ -76,6 +76,6 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.3254902, g: 0.34509805, b: 0.35686275, a: 1}
-    - _EmissionColor: {r: 0.00052083336, g: 0.0003370098, b: 0.0031096814, a: 1}
+    - _Color: {r: 0, g: 0.4690051, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0.16408041, b: 0.33962262, a: 1}
   m_BuildTextureStacks: []

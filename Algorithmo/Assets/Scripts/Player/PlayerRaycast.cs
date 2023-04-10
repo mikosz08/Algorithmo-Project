@@ -2,17 +2,17 @@ using UnityEngine;
 
 public class PlayerRaycast : MonoBehaviour
 {
-    [SerializeField] private float maxRayDistance = 100.0f;
+    [SerializeField] [Range(100.0f, 1000.0f)] private float maxRayDistance = 100.0f;
 
     private RaycastHit rayHit;
     private ConsoleButton seenConsoleButton = null;
 
     private void Update()
     {
-        Scan();
+        SendRay();
     }
 
-    private void Scan()
+    private void SendRay()
     {
         var ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2.0f, Screen.height / 2.0f, 0));
         Debug.DrawRay(ray.origin, ray.direction * maxRayDistance, Color.green);
@@ -43,4 +43,10 @@ public class PlayerRaycast : MonoBehaviour
             }
         }
     }
+
+    private void DrawRay()
+    {
+
+    }
+
 }

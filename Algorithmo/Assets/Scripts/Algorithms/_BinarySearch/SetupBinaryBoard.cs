@@ -11,7 +11,7 @@ public class SetupBinaryBoard : MonoBehaviour
     [SerializeField] private Transform instantiateParent = null;
     [SerializeField] private Vector2 instantiateOffset = Vector2.right;
     [SerializeField] private Vector2 boardSize = Vector2.zero;
-    [SerializeField] [Range(0.001f, 0.01f)] private float spawnDelay = 0.1f;
+    [SerializeField] [Range(0.0f, 0.01f)] private float spawnDelay = 0.1f;
 
     private Coroutine boardActivationCoroutine = null;
 

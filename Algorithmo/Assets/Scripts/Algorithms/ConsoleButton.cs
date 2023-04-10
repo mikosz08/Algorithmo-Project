@@ -8,7 +8,10 @@ public abstract class ConsoleButton : MonoBehaviour
 
     private void Awake()
     {
-        ButtonCanvasText.SetActive(false);
+        if (this.isActiveAndEnabled)
+        {
+            ButtonCanvasText.SetActive(false);
+        }
     }
 
     public abstract void FireButton();

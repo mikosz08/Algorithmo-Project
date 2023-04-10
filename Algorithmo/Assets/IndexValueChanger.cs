@@ -1,15 +1,23 @@
 using UnityEngine;
 
-public class IndexValueChanger : ConsoleButton, IArrowIndexChanger
+public class IndexValueChanger : ConsoleButton
 {
-    public void ChangeIndexValue(int value)
+
+    [SerializeField] private int indexChange = 0;
+
+    private MonitorIndex monitorIndex = null;
+
+    private void Start()
     {
-        Debug.Log("Nom");
+        monitorIndex = GetComponentInParent<MonitorIndex>();
     }
 
     public override void FireButton()
     {
-        Debug.Log(gameObject.name + "fired!");
+        //Debug.Log(gameObject.name + "fired!");
+        monitorIndex.UpdateMonitorIndexText(indexChange);
     }
+
+    //private void ChangeIndexValue
 
 }
