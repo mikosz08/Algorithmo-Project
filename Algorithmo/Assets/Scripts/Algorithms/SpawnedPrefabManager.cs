@@ -4,12 +4,14 @@ public class SpawnedPrefabManager : MonoBehaviour
 {
 
     [SerializeField] private Material prefabMaterial;
+
     private Renderer prefabRenderer;
 
     private void Awake()
     {
         prefabRenderer = GetComponent<Renderer>();
-        prefabRenderer.material.color = prefabMaterial.color;
+        if (prefabMaterial != null)
+            prefabRenderer.material.color = prefabMaterial.color;
     }
 
     public void ChangeColor(Color c)

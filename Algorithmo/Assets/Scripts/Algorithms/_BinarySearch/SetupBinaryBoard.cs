@@ -6,19 +6,30 @@ using System.Linq;
 
 public class SetupBinaryBoard : MonoBehaviour
 {
-    [SerializeField] private GameObject prefab = null;
-    [SerializeField] private GameObject spawnPoint = null;
+    public List<GameObject> PrefabsList { get; private set; } = null;
+
+
+    [SerializeField] private GameObject prefabToSpawn = null;
+    [SerializeField] private Vector3 prefabToSpawnSize = new(1, 1, 1);
     [SerializeField] private Transform instantiateParent = null;
-    [SerializeField] private Vector2 instantiateOffset = Vector2.right;
     [SerializeField] private Vector2 boardSize = Vector2.zero;
+    [SerializeField] private Vector2 instantiateOffset = Vector2.right;
+
+
+    //[SerializeField] private GameObject spawnPoint = null;
+
     [SerializeField] [Range(0.0f, 0.01f)] private float spawnDelay = 0.1f;
 
     private Coroutine boardActivationCoroutine = null;
 
-    public List<GameObject> PrefabsList { get; private set; } = null;
     public bool BoardSetupIsDone { get; private set; } = false;
     public bool BoardIsActivated { get; private set; } = false;
     public bool ShouldSetupTheBoard { get; internal set; }
+
+    private void Start()
+    {
+        prefabToSpawn.transform.localScale = prefabToSpawnSize;
+    }
 
     private void Update()
     {
@@ -37,8 +48,8 @@ public class SetupBinaryBoard : MonoBehaviour
     {
         PrefabsList = new List<GameObject>();
 
-        var _position = spawnPoint.transform.position;
-        var _rotation = spawnPoint.transform.rotation;
+        var _position = instantiateParent.transform.position;
+        var _rotation = instantiateParent.transform.rotation;
         var _startY = _position.y;
 
         for (var x = 0; x < boardSize.x; ++x)
@@ -46,7 +57,7 @@ public class SetupBinaryBoard : MonoBehaviour
             // Instantiate given prefabs, on given position and inside given parent:
             for (var y = 0; y < boardSize.y; ++y)
             {
-                var _prefab = Instantiate(prefab, _position, _rotation, instantiateParent);
+                var _prefab = Instantiate(prefabToSpawn, _position, _rotation, instantiateParent);
                 PrefabsList.Add(_prefab);
                 _position.y += instantiateOffset.y;
             }
@@ -63,8 +74,8 @@ public class SetupBinaryBoard : MonoBehaviour
         foreach (var prefab in shuffledList)
         {
             prefab.GetComponent<SpawnedPrefabManager>().Activate();
-            yield return new WaitForSeconds(spawnDelay);
-            //yield return null;
+            //yield return new WaitForSeconds(spawnDelay);
+            yield return null;
         }
         BoardIsActivated = true;
     }

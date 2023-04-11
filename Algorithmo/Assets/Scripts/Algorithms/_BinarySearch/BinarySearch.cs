@@ -17,7 +17,7 @@ public class BinarySearch : MonoBehaviour
             this.dataset.Add(new BinaryObject(_object));
         }
 
-        // Resets BinaryObjects counter.
+        // Resets BinaryObjects counter after the process is finished.
         BinaryObject.nextNumber = 0;
     }
 
