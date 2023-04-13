@@ -1,17 +1,23 @@
+using TMPro;
 using UnityEngine;
 
 public class SpawnedPrefabManager : MonoBehaviour
 {
-
     [SerializeField] private Material prefabMaterial;
 
-    private Renderer prefabRenderer;
+    private Renderer prefabRenderer = null;
+    private MeshRenderer prefabMeshRenderer = null;
+
+    public int PrefabIndex { get; set; }
+    public TextMeshPro Label { get; set; }
 
     private void Awake()
     {
         prefabRenderer = GetComponent<Renderer>();
-        if (prefabMaterial != null)
-            prefabRenderer.material.color = prefabMaterial.color;
+        prefabMeshRenderer = GetComponent<MeshRenderer>();
+
+        prefabRenderer.material.color = prefabMaterial.color;
+        prefabMeshRenderer.enabled = false;
     }
 
     public void ChangeColor(Color c)
@@ -22,5 +28,8 @@ public class SpawnedPrefabManager : MonoBehaviour
     public void Activate()
     {
         prefabRenderer.enabled = true;
+
+
+        Label.GetComponent<MeshRenderer>().enabled = true;
     }
 }

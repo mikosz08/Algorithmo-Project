@@ -3,24 +3,22 @@ using System.Collections;
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 
 public class SetupBinaryBoard : MonoBehaviour
 {
     public List<GameObject> PrefabsList { get; private set; } = null;
-
 
     [SerializeField] private GameObject prefabToSpawn = null;
     [SerializeField] private Vector3 prefabToSpawnSize = new(1, 1, 1);
     [SerializeField] private Transform instantiateParent = null;
     [SerializeField] private Vector2 boardSize = Vector2.zero;
     [SerializeField] private Vector2 instantiateOffset = Vector2.right;
-
-
-    //[SerializeField] private GameObject spawnPoint = null;
-
-    [SerializeField] [Range(0.0f, 0.01f)] private float spawnDelay = 0.1f;
+    //[SerializeField] [Range(0.1f, 1.0f)] private float spawnDelay = 0.1f;
+    [SerializeField] private TextMeshPro prefabIndexTextMesh = null;
 
     private Coroutine boardActivationCoroutine = null;
+    private Coroutine boardSetUpCoroutine = null;
 
     public bool BoardSetupIsDone { get; private set; } = false;
     public bool BoardIsActivated { get; private set; } = false;
@@ -33,9 +31,9 @@ public class SetupBinaryBoard : MonoBehaviour
 
     private void Update()
     {
-        if (ShouldSetupTheBoard && !BoardSetupIsDone)
+        if (ShouldSetupTheBoard && !BoardSetupIsDone && boardSetUpCoroutine == null)
         {
-            SetUpBoard();
+            boardSetUpCoroutine = StartCoroutine(SetUpBoard());
         }
 
         if (BoardSetupIsDone && !BoardIsActivated && boardActivationCoroutine == null)
@@ -44,13 +42,17 @@ public class SetupBinaryBoard : MonoBehaviour
         }
     }
 
-    private void SetUpBoard()
+    private IEnumerator SetUpBoard()
     {
         PrefabsList = new List<GameObject>();
 
-        var _position = instantiateParent.transform.position;
-        var _rotation = instantiateParent.transform.rotation;
+        var _transform = instantiateParent.transform;
+        var _position = _transform.position;
+        var _rotation = _transform.rotation;
+
         var _startY = _position.y;
+
+        var _prefabIndex = 0;
 
         for (var x = 0; x < boardSize.x; ++x)
         {
@@ -58,14 +60,25 @@ public class SetupBinaryBoard : MonoBehaviour
             for (var y = 0; y < boardSize.y; ++y)
             {
                 var _prefab = Instantiate(prefabToSpawn, _position, _rotation, instantiateParent);
+                var _label = Instantiate(prefabIndexTextMesh, _prefab.transform);
+                var prefabSpawnManager = _prefab.GetComponent<SpawnedPrefabManager>();
+
+                _label.SetText(_prefabIndex.ToString());
+                _label.rectTransform.localPosition = Vector3.forward;
+
+                prefabSpawnManager.PrefabIndex = _prefabIndex++;
+                prefabSpawnManager.Label = _label;
+
                 PrefabsList.Add(_prefab);
                 _position.y += instantiateOffset.y;
             }
             // Update next prefab's spawn position:
             _position.x += instantiateOffset.x;
             _position.y = _startY;
+            yield return new WaitForEndOfFrame();
         }
         BoardSetupIsDone = true;
+        yield return null;
     }
 
     private IEnumerator ActivatePrefabsRandomly()
