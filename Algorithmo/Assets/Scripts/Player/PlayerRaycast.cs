@@ -31,7 +31,7 @@ public class PlayerRaycast : MonoBehaviour
                 seenConsoleButton = consoleButton;
                 seenConsoleButton.ShowCanvasText(true);
 
-                if (Input.GetKeyDown(KeyCode.F))
+                if (Input.GetKeyDown((KeyCode)GameKeyCode.PerformAction))
                 {
                     seenConsoleButton.FireButton();
                 }
