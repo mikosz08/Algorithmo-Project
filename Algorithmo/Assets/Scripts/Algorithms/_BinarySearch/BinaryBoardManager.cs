@@ -5,17 +5,23 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 
-public class SetupBinaryBoard : MonoBehaviour
+public class BinaryBoardManager : MonoBehaviour
 {
     public List<GameObject> PrefabsList { get; private set; } = null;
 
     [SerializeField] private GameObject prefabToSpawn = null;
+
     [SerializeField] private Vector3 prefabToSpawnSize = new(1, 1, 1);
+
     [SerializeField] private Transform instantiateParent = null;
+
     [SerializeField] private Vector2 boardSize = Vector2.zero;
+
     [SerializeField] private Vector2 instantiateOffset = Vector2.right;
-    //[SerializeField] [Range(0.1f, 1.0f)] private float spawnDelay = 0.1f;
+
     [SerializeField] private TextMeshPro prefabIndexTextMesh = null;
+
+    [SerializeField] private MonitorIndexManager monitorIndex = null;
 
     private Coroutine boardActivationCoroutine = null;
     private Coroutine boardSetUpCoroutine = null;
@@ -23,6 +29,9 @@ public class SetupBinaryBoard : MonoBehaviour
     public bool BoardSetupIsDone { get; private set; } = false;
     public bool BoardIsActivated { get; private set; } = false;
     public bool ShouldSetupTheBoard { get; internal set; }
+    public bool BinaryBoardCompleted { get; internal set; }
+
+    private static GameObject markedObject = null;
 
     private void Start()
     {
@@ -31,15 +40,47 @@ public class SetupBinaryBoard : MonoBehaviour
 
     private void Update()
     {
-        if (ShouldSetupTheBoard && !BoardSetupIsDone && boardSetUpCoroutine == null)
+        if (!BinaryBoardCompleted)
         {
-            boardSetUpCoroutine = StartCoroutine(SetUpBoard());
-        }
+            Debug.Log("workin");
+            if (ShouldSetupTheBoard && !BoardSetupIsDone && boardSetUpCoroutine == null)
+            {
+                boardSetUpCoroutine = StartCoroutine(SetUpBoard());
+            }
 
-        if (BoardSetupIsDone && !BoardIsActivated && boardActivationCoroutine == null)
-        {
-            boardActivationCoroutine = StartCoroutine(ActivatePrefabsRandomly());
+            if (BoardSetupIsDone && !BoardIsActivated && boardActivationCoroutine == null)
+            {
+                boardActivationCoroutine = StartCoroutine(ActivatePrefabsRandomly());
+            }
+
+            if (IsBoardReady())
+            {
+                monitorIndex.GetComponent<MonitorIndexManager>().IsReady = true;
+                monitorIndex.MaxIndexValue = PrefabsList.Count - 1;
+                BinaryBoardCompleted = true;
+            }
         }
+    }
+
+    public void MarkObject(int index)
+    {
+        if (markedObject != null)
+        {
+            markedObject.GetComponent<SpawnedPrefabManager>().SetDefaultColor();
+        }
+        markedObject = GetBinaryObject(index);
+        markedObject.GetComponent<SpawnedPrefabManager>().ChangeColor(Color.green);
+    }
+
+    public GameObject GetBinaryObject(int index)
+    {
+        return PrefabsList[index];
+    }
+
+    private bool IsBoardReady()
+    {
+        var _isBoardReady = BoardSetupIsDone && BoardIsActivated;
+        return _isBoardReady;
     }
 
     private IEnumerator SetUpBoard()
@@ -87,7 +128,6 @@ public class SetupBinaryBoard : MonoBehaviour
         foreach (var prefab in shuffledList)
         {
             prefab.GetComponent<SpawnedPrefabManager>().Activate();
-            //yield return new WaitForSeconds(spawnDelay);
             yield return null;
         }
         BoardIsActivated = true;

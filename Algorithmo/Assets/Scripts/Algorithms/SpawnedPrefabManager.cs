@@ -5,18 +5,20 @@ public class SpawnedPrefabManager : MonoBehaviour
 {
     [SerializeField] private Material prefabMaterial;
 
+    private Color prefabColor = new Color(0, 0, 0);
     private Renderer prefabRenderer = null;
     private MeshRenderer prefabMeshRenderer = null;
 
-    public int PrefabIndex { get; set; }
+    [SerializeField] public int PrefabIndex { get; set; }
     public TextMeshPro Label { get; set; }
 
     private void Awake()
     {
         prefabRenderer = GetComponent<Renderer>();
         prefabMeshRenderer = GetComponent<MeshRenderer>();
+        prefabColor = prefabMaterial.color;
 
-        prefabRenderer.material.color = prefabMaterial.color;
+
         prefabMeshRenderer.enabled = false;
     }
 
@@ -25,11 +27,15 @@ public class SpawnedPrefabManager : MonoBehaviour
         prefabRenderer.material.color = c;
     }
 
+    public void SetDefaultColor()
+    {
+        prefabRenderer.material.color = prefabColor;
+    }
+
     public void Activate()
     {
         prefabRenderer.enabled = true;
-
-
         Label.GetComponent<MeshRenderer>().enabled = true;
     }
+
 }

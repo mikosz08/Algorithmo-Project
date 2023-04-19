@@ -304,7 +304,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2090482017058573252}
   - component: {fileID: 2469538778220190352}
-  - component: {fileID: 4399752823896092357}
   m_Layer: 0
   m_Name: BinarySearch
   m_TagString: Untagged
@@ -340,24 +339,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be97945fd6283a045aefd135e8074aed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4399752823896092357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2090482017058573253}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff1b98e921ceb20439ad2ab4d96b04cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 3694403014879620704, guid: 047ca4fc9d30e794a8ba49ecbbf11cac, type: 3}
-  spawnPoint: {fileID: 5310865382479284179}
-  instantiateParent: {fileID: 8389161598961919221}
-  instantiateOffset: {x: 18, y: 18}
-  boardSize: {x: 18, y: 18}
-  spawnDelay: 0.01
 --- !u!1 &5310865381213677041
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,7 +451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonCanvasText: {fileID: 0}
-  setupBinaryBoard: {fileID: 4399752823896092357}
+  setupBinaryBoard: {fileID: 0}
 --- !u!95 &5310865381213676931
 Animator:
   serializedVersion: 5

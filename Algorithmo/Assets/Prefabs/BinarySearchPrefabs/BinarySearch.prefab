@@ -41,7 +41,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6102687268231441447}
   - component: {fileID: 7779523614448582003}
-  - component: {fileID: 8411866540122343718}
   m_Layer: 0
   m_Name: BinarySearch
   m_TagString: Untagged
@@ -77,22 +76,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be97945fd6283a045aefd135e8074aed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8411866540122343718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6102687268231441446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff1b98e921ceb20439ad2ab4d96b04cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 3694403014879620704, guid: 047ca4fc9d30e794a8ba49ecbbf11cac, type: 3}
-  spawnPoint: {fileID: 0}
-  instantiateParent: {fileID: 4458477783145546518}
-  prefabSize: {x: 1, y: 1, z: 1}
-  instantiateOffset: {x: 18, y: 18}
-  boardSize: {x: 18, y: 18}
-  spawnDelay: 0.01
